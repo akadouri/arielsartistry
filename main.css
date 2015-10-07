@@ -1,0 +1,73 @@
+body {
+  background-color: #616161;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color:#FFFFFF;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#sidebar {
+  margin: 25px 0 0 25px;
+  display: inline-block;
+}
+
+#main {
+  margin: 25px 0 0 25px;
+  display: inline-block;
+  vertical-align:top;
+  color:#FFFFFF;
+}
+
+#bitbucket:hover,
+#github:hover,
+#facebook:hover,
+#linkedin:hover,
+#tumblr:hover,
+#google:hover,
+#twitter:hover
+{
+  color: #ffffff;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+#twitter {
+  color: #55acee;
+  text-decoration: none;
+}
+
+#google {
+  color: #DC4E41;
+  text-decoration: none;
+}
+
+#tumblr {
+    color: #35465c;
+    text-decoration: none;
+}
+
+#linkedin {
+    color: #0077B5;
+    text-decoration: none;
+}
+
+#facebook {
+    color: #3B5998;
+    text-decoration: none;
+}
+
+#github {
+  color: #000000;
+  text-decoration: none;
+}
+
+#bitbucket {
+  color: #205081;
+  text-decoration: none;
+}
