@@ -1,0 +1,56 @@
+/* Excerpts */
+.excerpt-row {
+  margin-top:2px;
+  padding: 5px; 
+}
+
+.excerpt-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.excerpt-img {
+  max-width: 300px;
+}
+
+
+/* Sidebar */
+
+#github:hover,
+#twitter:hover
+{
+  color: #808080;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+#twitter {
+  color: #55acee;
+  text-decoration: none;
+}
+
+#github {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Images */
+.img-full {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  display: block;
+  margin: auto;
+}
+
+.caption {
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
