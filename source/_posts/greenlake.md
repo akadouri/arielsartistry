@@ -3,20 +3,20 @@ title: Green Lake Geography
 date: 2018-07-03 14:16:15
 thumbnail: img.png
 short: "A report written for Geography 490: The Seattle Region"
-tags:
+tags: seattle
 ---
 
-*This report was originally written for [Geography 490: Field Research - The Seattle Region](https://geography.washington.edu/courses/2018/winter/geog/490/a) and has been modified from its original version. It has been formatted to fit this screen. Checkout the [class site](http://depts.washington.edu/geostory/omeka/seattle-stories-2018) for other neighborhood reports. If anyone is a longtime Green Lake resident - I'd love to talk about your experience in the neighborhood as it changed.* 
+*This report was originally written for [Geography 490: Field Research - The Seattle Region](https://geography.washington.edu/courses/2018/winter/geog/490/a) and has been modified from its original version. It has been formatted to fit this screen. Check out the [class site](http://depts.washington.edu/geostory/omeka/seattle-stories-2018) for other neighborhood reports. If anyone is a longtime Green Lake resident - I'd love to talk about your experience in the neighborhood as it changed.* 
 
-This report is a look at the neighborhood bordering northeast Green Lake, which I will refer to as Green Lake for the rest of the report. Additonally, the study area is boxed in by East Green Lake Drive North, Latona Avenue Northeast, Woodlawn Avenue Northeast, and Ravenna Boulevard.
+This report examines the neighborhood bordering northeast Green Lake, which I will refer to as Green Lake throught this report. Additonally, the study area is bordered by East Green Lake Drive North, Latona Avenue Northeast, Woodlawn Avenue Northeast, and Ravenna Boulevard.
 
-Through these neighborhood reports, I review Green Lake's current landscape as well as a sample of its enviromental and developmental history. Green Lake's geoengineering history is one great example of how early 1900s Seattle changed the physical landscape to meet the Olmsted plan. In terms of more modern development, I believe the new "Green Lake Village" complex offers a preview towards the impact future rezoning/upzoning changes may have on other Seattle neighorbhoods. This report is by no means a comprehsive look of the neighorhood, it should not replace a visit but instead inspire one.
+Through these neighborhood reports, I review Green Lake's current landscape as well as a sample of its enviromental and developmental history. Green Lake's geoengineering history is a substaintial example of the early 1900s changes made to the physical landscape to meet the Olmsted plan. With respect to more modern development, I believe the new "Green Lake Village" complex offers a preview of the impact future rezoning/upzoning changes may have on other Seattle neighborhoods. This report is by no means a comprehensive look at the neighorhood, it should not replace a visit but inspire one.
 
 ## A Quick Look
 
 {% box img1.png "Fig 1. Notes & Hand Drawn Map" %}
 
-On Janurary 31st I made my first pass through the area, as shown in Fig 1. I began on the corner of Latona Ave and Woodlawn Ave and walked southwest towards 4th Ave NE. This corner, depicted in Fig 2, shows the jump in housing from single family homes to the high/mid rises that would follow two blocks further down. Before that area, bordering between the single family homes and the rest of the neighborhood, is a preschool and the Green Lake branch of the Seattle Public Library. The library branch has its own parking lot, and takes up the block. Parking lots are more frequent in this northern area, while bus stops are also plentiful. This area does not require paid parking, but the areas further south do. It was around 5pm, cold, and getting dark. The schools were either letting out or closed, many of the gyms full, and the restaurants preparing for dinner. Many of the local businesses are centered around services to the residents that live near the area (see Fig 3). Going into the area further south, is two more schools, two running stores, a bike store, two gyms, two “bar and grill” places, and many other restaurants.
+On Janurary 31st I made my first pass through the area, as shown in Fig 1. I began on the corner of Latona Ave and Woodlawn Ave and walked southwest towards 4th Ave NE. This corner, depicted in Fig 2, shows the jump in housing from single family homes to the high/mid rises that would follow two blocks further down. Before that area, bordering between the single family homes and the rest of the neighborhood, is a preschool and the Green Lake branch of the Seattle Public Library. The library branch has its own parking lot and takes up the block. Parking lots are more frequent in this northern area, while bus stops are also plentiful. This area does not require paid parking, but the areas further south do. It was around 5pm, cold, and getting dark. The schools were either letting out or closed, many of the gyms full, and the restaurants preparing for dinner. Many of the local businesses are centered around services to the residents that live near the area (see Fig 3). Going into the area further south, is two more schools, two running stores, a bike store, two gyms, and several restaurants.
 
 {% box 4th_and_Woodlawn-min.jpg "Fig 2. Corner of 4th and Woodlawn" %}
 {% box Mixed_Housing-min.jpg "Fig 3. Green Lake Village, Mixed Commerical + Housing" %}
@@ -24,13 +24,13 @@ On Janurary 31st I made my first pass through the area, as shown in Fig 1. I beg
 ### Initial Research Questions:
 
 1. In what order this area develop? How and why did it develop this way? <br> 
-I would like to look at the zoning map for this area, since it’s clear that only a portion is zoned for high rise apartments and the bordering areas are single family homes or condos. I would also want to see when the zoning changes were made, since the apartment buildings all look new.
+I would like to look at the zoning map for this area, since it’s clear that only a portion is zoned for high rise apartments and the bordering areas are zoned for single family homes or condos. I would also want to see when the zoning changes were made, since the apartment buildings all appear new.
 
 2. Why are there so many pre-schools in this area? <br>
-There are two pre-schools, and a middle school in this area but the census data said this area had less children than average. Are the residents of this area bringing their children to these schools or are they coming from farther away? 
+There are two pre-schools, and a middle school in this area but the census data said this area had less children than average. Are the students residents of this area or neighboring areas? 
 
 3. How is this area effected seasonally? <br>
-Unfortunately too longitudal for this class project but this area is next to Green Lake park, which sees an influx of visitors in the summer. This area has many restaurants and bar/grills which I imagine see most of their business in the summer months. There is also a running store and a cycling store, two activities that many park goers do. Interviewing the businesses, counting people in the area, looking at sales numbers would all help paint the seasonal picture.
+Unfortunately, this question is too longitudal for this class project, but this area is next to Green Lake park, which sees an influx of visitors in the summer. This area has many restaurants which may see increased business in the summer months. There is also a running store and a cycling store; the park draws people for both activies. Interviewing the businesses, counting people in the area, and looking at sales numbers would all help paint the seasonal picture.
 
 {% box IMG_20180131_171418.jpg "Fig 4. Green Lake Public Library, Built in 1920" %}
 
@@ -43,7 +43,7 @@ The 1894 topographical map (Fig 5) shows a waterway that flowed from Green Lake 
 {% box 1910%20olmstead%20plan.jpg "Fig 6. 1910 Olmsted Plan" %}
 {% box 2314.jpg "Fig 7. 1908 Grading Plan" %}
 
-Fig 6 shows the 1910 preliminary Olmstead brother’s plan to redesign the lake front and establish Ravenna Boulevard. This map shows two proposed lake boundaries, one much farther in with, what I think, is a road going through it and one farther out with no road. Comments on the map say residents protested the original boarder, a slightly smaller lake with a road dividing the lake and the play field. Today’s shoreline is very close to that revised shore line, and the play field does not have a road going through it. A parking lot has since been added to the area. The roads along the lake, Latona Ave, 4th Ave, Maple Leaf Place, 72nd, 71st, and Ravenna E are all still there today and can be seen in my hand drawn map of the area.
+Fig 6 shows the 1910 preliminary Olmstead Brothers' plan to redesign the lakefront and establish Ravenna Boulevard. This map shows two proposed lake boundaries, one much farther in with, what I think, is a road going through it and one farther out with no road. Comments on the map say residents protested the original boarder, a slightly smaller lake with a road dividing the lake and the play field. Today’s shoreline is very close to that revised shore line, and the play field does not have a road going through it. A parking lot has since been added to the area. The roads along the lake, Latona Ave, 4th Ave, Maple Leaf Place, 72nd, 71st, and Ravenna E are all still there today and can be seen in my hand drawn map of the area.
 
 *Note: It turns out that I initally looked at the map (Fig 7) wrong, north is not up in this map. this is actually a map of the of area north of woodlawn park, which on its side looked a lot like the study area. interestingly the lake also extended much further into the woodlawn park area and was filled up.*
 

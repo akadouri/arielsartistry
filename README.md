@@ -1,6 +1,6 @@
 # [ArielsArtistry.com](https://arielsartistry.com)
 
-This repository contains the code for my personal website, including any tutorials or blog posts on the website. If you're looking for those they'll be in /source/_posts/. 
+This repository contains the code for my personal website, including any tutorials or blog posts on the website. The individual posts are stored in [/source/_posts/](https://github.com/akadouri/arielsartistry/tree/master/source/_posts). There is a markdown file for each blog post, and then a folder with that post's assests (images, code snippets, etc). 
 
 ## To run locally
 
