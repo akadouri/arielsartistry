@@ -1,6 +1,6 @@
 ---
 title:  "NYC Pizza Routes"
-date:   2018-01-27 21:31:51 -0800
+date:   2018-08-01 21:31:51 -0800
 thumbnail: pizza_routes.png
 short: Routing to pizza places in NYC.
 ---

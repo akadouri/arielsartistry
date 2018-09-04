@@ -34,7 +34,7 @@ Unfortunately, this question is too longitudal for this class project, but this 
 
 {% box IMG_20180131_171418.jpg "Fig 4. Green Lake Public Library, Built in 1920" %}
 
-## Enviormental Geography
+## Environmental Geography
 
 {% box 1894%20Topography.png "Fig 5. 1894 Topography" %}
 
@@ -43,15 +43,13 @@ The 1894 topographical map (Fig 5) shows a waterway that flowed from Green Lake 
 {% box 1910%20olmstead%20plan.jpg "Fig 6. 1910 Olmsted Plan" %}
 {% box 2314.jpg "Fig 7. 1908 Grading Plan" %}
 
-Fig 6 shows the 1910 preliminary Olmstead Brothers' plan to redesign the lakefront and establish Ravenna Boulevard. This map shows two proposed lake boundaries, one much farther in with, what I think, is a road going through it and one farther out with no road. Comments on the map say residents protested the original boarder, a slightly smaller lake with a road dividing the lake and the play field. Today’s shoreline is very close to that revised shore line, and the play field does not have a road going through it. A parking lot has since been added to the area. The roads along the lake, Latona Ave, 4th Ave, Maple Leaf Place, 72nd, 71st, and Ravenna E are all still there today and can be seen in my hand drawn map of the area.
+Fig 6 shows the 1910 preliminary Olmstead Brothers' plan to redesign the lakefront and establish Ravenna Boulevard. This map shows two proposed lake boundaries, one much farther in with what I think is a road going through it, and a farther one with no road. Comments on the map say residents protested the original border, a slightly smaller lake with a road dividing the lake and the play field. Today’s shoreline is very close to that revised shore line, and the play field does not have a road going through it. A parking lot has since been added to the area. The roads along the lake, Latona Ave, 4th Ave, Maple Leaf Place, 72nd, 71st, and Ravenna E all remain there today and can be seen in my hand drawn map of the area.
 
-*Note: It turns out that I initally looked at the map (Fig 7) wrong, north is not up in this map. this is actually a map of the of area north of woodlawn park, which on its side looked a lot like the study area. interestingly the lake also extended much further into the woodlawn park area and was filled up.*
-
-It’s incredible that these planning maps look so similar to what we have today even though the landscape at the time did not. Fig 7, from 1908, provides a look into the planning process of grading a *nearby area (north of Woodlawn park)*. A note on the map says “plating areas indicated thus [symbol]. These areas should be covered with 18” good topsoil." There are many trees and shurbs surrounding the lake today, and  trees along the border of the park providing a barrier to the road. From both Fig 6 and Fig 8 it looks like Green Lake used to have more tiny islands and a rougher coastline. I believe that today the only permanent island within the lake is Duck Island.
+It’s incredible that these planning maps look so similar to what we have today, even though the landscape at the time did not. Fig 7, from 1908, provides a look into the planning process of grading a nearby area (north of Woodlawn park). A note on the map says “plating areas indicated thus [symbol]. These areas should be covered with 18” good topsoil." There are many trees and shrubs surrounding the lake today, and  trees along the border of the park providing a barrier to the road. From both Fig 6 and Fig 8 it looks like Green Lake used to have more tiny islands and a rougher coastline. I believe that today the only permanent island within the lake is Duck Island.
 
 {% box final_out.png "Fig 8. 2009 USGS Topography" %}
 
-Looking at today’s USGS topographic information, as shown in Fig 8, we can still see the result of the landscape modifications. The Green Lake park was filled with ‘Landfill Debris’ and I-5 is listed as ‘Modified Land’. My study area is half covered by the alluvium layer, which is “sand, silt, gravel, and cobbles; deposited in stream valleys by running water” while the other half of the area is glacial till (Booth, et. al 2005). There is the muddy green way between North East Ravenna Boulevard that exposes the ground which previously had flowing water. That area is a fraction of the size of the area in red. From my experience running in the area, on rainy days water can pool up and it gets quiet muddy.
+Looking at today’s USGS topographic information, as shown in Fig 8, we can still see the result of the landscape modifications. The Green Lake park was filled with ‘Landfill Debris’ and I-5 is listed as ‘Modified Land’. My study area is half covered by the alluvium layer, which is “sand, silt, gravel, and cobbles; deposited in stream valleys by running water” while the other half of the area is glacial till (Booth, et. al 2005). There is the muddy green way between Northeast Ravenna Boulevard that exposes ground which previously had flowing water. That area is a fraction of the size of the area in red. From my experience running in the area, on rainy days water can pool up and it gets quite muddy.
 
 {% box IMG_20180131_171227-min.jpg "Fig 9. Latona Ave and East Green Lake Drive" %}
 
@@ -62,24 +60,24 @@ Fig 9 shows Latona Ave and East Green Lake Drive, across the street is the park 
 
 ## Shaping Modern Green Lake
 
-{% box 1958_Arial_photo-min.png "Fig 10. 1958 Arial Photo" %}
+{% box 1958_Arial_photo-min.png "Fig 10. 1958 Aerial Photo" %}
 
-Green Lake’s post settler history is not too long, with just over a hundred and fifty years of development. A timeline of every change would be too much for this project, instead I’ll look at snapshots of the area that might help uncover when certain big changes occurred. 
+Green Lake’s post settler history is not long, with just over a hundred and fifty years of development. A timeline of every change would be too much for this project, instead I’ll look at snapshots of the area to uncover when substantial changes were made. 
 
 {% box 1959%205th%20and%2073rd.JPG "Fig 11. 1959 5th and 73rd, "Typical Home" %}
 
 
-The Green Lake neighborhood was annexed into the City of Seattle in 1891 along with Magnolia, Wallingford, Fremont, and the University District (Lange 1999). In my previous report, we saw how the area’s landscape was modified to suit the residents. The Olmsted Brothers proposed one park option, and the residents fought back changing the proposed shoreline. Still, the lake was filled and the streets carved up. Another snapshot, the area in 1958 (Fig 11) shows the properties mostly filled with buildings and Ravenna Ave is lined with grown trees. Additional photos were taken in 1959 (Fig 11) of the area to use for rezoning considerations show a “typical house”. 
+The Green Lake neighborhood was annexed into the City of Seattle in 1891 along with Magnolia, Wallingford, Fremont, and the University District (Lange 1999). In my previous report, we saw how the area’s landscape was modified to suit the residents. The Olmsted Brothers proposed one park option, and the residents fought back changing the proposed shoreline. Still, the lake was filled and the streets carved up. Another snapshot, the area in 1958 and 1959, shows the properties mostly filled with buildings and Ravenna Ave is lined with grown trees. Photos were taken of the area to for rezoning considerations and show a “typical house”. 
 
 {% box zoning.jpg "Fig 12. 1972, 1980 and 2012 Zoning" %}
 
-Seattle’s Municipal Archives provide an excellent viewing lens to the history of the area. Beginning with the 1972 Zoning Map (Fig 12), we can see the buildings in the study area are mostly labeled “BC – Community Business” or “CG – General Commercial.” Using the definitions from the 1980 Seattle Municipal Code, CG zones were completely non-residential, in fact Section 24.52.100 says “When residential development will not usurp land which is needed for and better suited to commercial usage by virtue of special attributes such as railroad access and proximity of established commercial district.” Today, these areas (Fig 12) are “NC2P-65” or Neighborhood Commercial, Pedestrian with a height limit of 65ft.
+Seattle’s Municipal Archives provide an excellent lens to study the history of the area. Beginning with the 1972 Zoning Map (Fig 12), we can see the buildings in the study area are mostly labeled “BC – Community Business” or “CG – General Commercial.” Using the definitions from the 1980 Seattle Municipal Code, CG zones were completely non-residential; in fact Section 24.52.100 says “When residential development will not usurp land which is needed for and better suited to commercial usage by virtue of special attributes such as railroad access and proximity of established commercial district.” Today, these areas (Fig 12) are zoned as “NC2P-65 Neighborhood Commercial, Pedestrian" with a height limit of 65ft.
 
-Interestingly, the 1972 Zoning Map (Fig 12) does not have Interstate 5, even though the high way had been completed in 1969 (Dougherty 2010). The properties that would be covered by the highway are still shown. The 1980 Zoning Map (Fig 12) does show Interstate 5, or “The Seattle Freeway.” While outside the study area, the Interstate 5 project isolated the green lake neighborhood from the Roosevelt area to the east.
+Interestingly, the 1972 Zoning Map (Fig 12) does not have Interstate 5, even though the highway had been completed in 1969 (Dougherty 2010). The properties that would be covered by the highway are still shown. The 1980 Zoning Map (Fig 12) does show Interstate 5, or “The Seattle Freeway.” While outside the study area, the Interstate 5 project isolated the green lake neighborhood from the Roosevelt area to the east.
 
-In an article from 1997’s Seattle PI, titled “Residents, Businesses Coexist in This Recreational Mecca” offers another view into the feeling of Green Lake’s residents before a spur of development. Residents seemed more concerned with the Green Lake’s algae boom then they did the incoming up zone. The news story highlights the neighborhood's athletic character, which remains today but could not know the extent of the incoming housing boom (Harell 1997).
+In an article from 1997’s Seattle PI, titled “Residents, Businesses Coexist in This Recreational Mecca” offers another view into the feeling of Green Lake’s residents before a spur of development. Residents seemed more concerned with the Green Lake’s algae bloom then they did the incoming up zone. The story highlights the neighborhood's athletic character, which remains today, but could not know the extent of the incoming housing boom (Harell 1997).
 
-Green Lake was a single family home community, with a distinct commercial area. Over a series of changes in the 1970, 1990s, and 2010s the area became consolidated, denser, and began to mix commerical and residential uses. In the next report I'll go into the development that occured after the Vita Milk Dairy left a hole in the neighborhood.
+Green Lake was a single family home community, with a distinct commercial area. Over a series of changes in the 1970, 1990s, and 2010s the area became consolidated, denser, and began to mix commercial and residential uses. In the next report I'll go into the development that occurred after the VitaMilk Dairy left a hole in the neighborhood.
 
 
 ## VitaMilk goes from Dairy to Developer
@@ -87,7 +85,7 @@ Green Lake was a single family home community, with a distinct commercial area. 
 
 Past, Present, Future: 419 NE 71st St
 
-On August 15th 2003, after more than six decades, the VitaMilk Dairy Inc stopped their dairy production operations in Green Lake (Frey 2003). VitaMilk landowners hired Lorig Associates and planned a residential complex. The project stalled in 2008, leaving a hole in the gorund while struggling to find an achor tennant (Eskenazi 2008). In 2013 PCC was announced as the anchor tenant for Green Lake Village, and residential/commercial mixed complex construction continued.
+On August 15th 2003, after more than six decades, the VitaMilk Dairy Inc stopped their dairy production operations in Green Lake (Frey 2003). VitaMilk landowners hired Lorig Associates and planned a residential complex. The project stalled in 2008, leaving a hole in the ground while struggling to find an anchor tenant (Eskenazi 2008). In 2013 PCC was announced as the anchor tenant for Green Lake Village, and residential/commercial mixed complex construction continued.
 
 In 2014, the property at 419 71st NE Street (across 71st from Green Lake Village) submitted applications to turn the old site into a mixed apartment and store front area. Today, those construction projects have mostly finished and businesses have moved in. It’s hard to imagine the area before all the apartment buildings. (If anyone is a longtime Green Lake resident - I'd love to talk about your experience in the neighborhood as it changed.)
 
@@ -99,7 +97,7 @@ Not everyone was excited for these changes. Fig 13. shows two comments about the
 
 {% box public_comments.png "Fig 14. Meeting Notes" %}
 
-419 71st NE became anchored by Bartell Drugs. The final community meeting, in April 2015, notes that the residents “felt the building will serve the needs of the community by providing a drug store and an enhanced look and feel of the neighborhood.” The neighborhood is expanding and, reflected by the unanimous vote from the Green Lake Chamber of Commerce, that is good for business. See Fig 14 for the curated public comments. After nearly 4 meetings in 8 months of design review, the building would pass another hurdle. 12 months after the first design review meeting, the master permit was issued (Fig 15). 419 71st Ave NE would become 130 residential units, 106 below ground parking spaces, and 14,609 square feet of retail space. 
+419 71st NE became anchored by Bartell Drugs. The final community meeting in April 2015 notes that the residents “felt the building will serve the needs of the community by providing a drug store and an enhanced look and feel of the neighborhood.” The neighborhood is expanding and, reflected by the unanimous vote from the Green Lake Chamber of Commerce, that is good for business. See Fig 14 for the curated public comments. After nearly 4 meetings in 8 months of design review, the building would pass another hurdle. 12 months after the first design review meeting, the master permit was issued (Fig 15). 419 71st Ave NE would become 130 residential units, 106 below ground parking spaces, and 14,609 square feet of retail space. 
 
 {% box final_permit.png "Fig 15. Final Decision" %}
 

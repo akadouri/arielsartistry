@@ -54,3 +54,8 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+/*Force word-wrap to break for long URLs used in "sources"*/
+p {
+	word-wrap: break-word;
+}
