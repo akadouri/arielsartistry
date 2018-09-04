@@ -1,0 +1,4 @@
+<!-- load in the posts -->
+<% page.posts.each(function(item){ %>
+    <%- partial('_partial/article-excerpt', {item: item}) %>
+<% }); %>
