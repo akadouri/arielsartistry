@@ -12,7 +12,7 @@ The map above shows travel distances from Penn Station to 194 NYC pizza places. 
 
 # Introduction
 
-Awhile ago I tried to find a tutorial for pgRouting on Mac OSX. I couldn't really find anything in one resource so after a weekend of fumbling through many tutorials I found managed to put together Pizza Map 1.0. I decided to put together this tutorial for anyone else interested in a routing crash course.
+A while ago I tried to find a tutorial for pgRouting on Mac OSX. I couldn't really find anything in one resource so after a weekend of fumbling through many tutorials I found managed to put together Pizza Map 1.0. I decided to put together this tutorial for anyone else interested in a routing crash course.
 
 ## Background knowledge 
 This tutorial will assume comfort with terminal and some SQL, though you should still be able to make it through by copying and modifying the examples I provide. To aggregate many routes together the routes, the tutorial goes into using Python. If you have any questions, feel free to reach out. 
@@ -32,7 +32,7 @@ This should install also PostgreSQL and PostGIS as dependencies.
 
 # Setting up PostgreSQL
 
-To start PostgreSQL run the following command, replacing *path/to/workspace* with the folder you'd like PostgreSQL to store your data. If you'd like you can set this as an enviorment variable *PGDATA*. Read more on the [official docs.](https://www.postgresql.org/docs/current/static/server-start.html)
+To start PostgreSQL run the following command, replacing *path/to/workspace* with the folder you'd like PostgreSQL to store your data. If you'd like you can set this as an environment variable *PGDATA*. Read more on the [official docs.](https://www.postgresql.org/docs/current/static/server-start.html)
 
 ```terminal
 pg_ctl -D /path/to/workspace start
@@ -95,7 +95,7 @@ If you make your own:
 * Check 'Commerical' and 'Transportation' on the "Tag Tree".
 * It may take a few minutes to create the export, they'll send you an email when it's done.
 
-Unfortunately, osm2pgrouting only accepts .osm files (xml) and pbf files are a optimized version of that. To convert from pbf to osm, install [osmctools](https://wiki.openstreetmap.org/wiki/Osmconvert):
+Unfortunately, osm2pgrouting only accepts .osm files (xml) and pbf files are an optimized version of that. To convert from pbf to osm, install [osmctools](https://wiki.openstreetmap.org/wiki/Osmconvert):
 
 ```terminal
 brew install interline-io/planetutils/osmctools
@@ -158,7 +158,7 @@ osm2pgrouting --f new-york-metro_export.osm --conf mapconfig.xml --dbname routin
 
 * the USERNAME is the one which invoked brew, which can be found on the "Owner" column through pqsl's `\d` command from earlier.
 
-This process will take awhile, osm2pgrouting loads all the data into memory and then inserts it into the database. 
+This process will take a while, osm2pgrouting loads all the data into memory and then inserts it into the database. 
 
 ### Check for data
 
@@ -394,7 +394,7 @@ You should now have routes.csv, which has line segments and their agg_cost (aggr
 
 # Shutting down PostgreSQL
 
-[Offical doc](https://www.postgresql.org/docs/current/static/server-shutdown.html)
+[Official doc](https://www.postgresql.org/docs/current/static/server-shutdown.html)
 
 ```terminal
 pg_ctl stop
@@ -402,7 +402,7 @@ pg_ctl stop
 
 # Where to go from here
 * The future is multimodal, but this tutorial only went over routing by cars. osm2pgrouting also has a mapconfig for bicycles and pedestrians. 
-* I also only used Dijkstra's algorithm, but pgRouting has suppport for many other routing algorithms. 
+* I also only used Dijkstra's algorithm, but pgRouting has support for many other routing algorithms. 
 * Consider a different analysis, or different focus area. Some areas have better OSM coverage than others. Instead of only looking for areas with great coverage, I think it can inspire OSM contributions if you focused on an area that was incomplete.
 
 
