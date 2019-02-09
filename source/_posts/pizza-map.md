@@ -5,6 +5,7 @@ thumbnail: pizza_routes.png
 short: Routing to pizza places in NYC.
 ---
 
+**10/5/18 This tutorial was also given as a talk at Maptime Seattle. [The google slides for that presentation is here.](https://docs.google.com/presentation/d/1geyx-BHge9Plb_QgeTQKw8G7HsPBBW8Iz4yBVs-7n9k/edit?usp=sharing) That presentation made use of PyQGIS but I haven't updated this tutorial yet to reflect that.**
 
 {% box pizza_routes.png "Routes from Penn to Pizza" %}
 
@@ -17,7 +18,11 @@ A while ago I tried to find a tutorial for pgRouting on Mac OSX. I couldn't real
 ## Background knowledge 
 This tutorial will assume comfort with terminal and some SQL, though you should still be able to make it through by copying and modifying the examples I provide. To aggregate many routes together the routes, the tutorial goes into using Python. If you have any questions, feel free to reach out. 
 
-# Installation 
+# Installation
+
+There are a few different ways to install all the tools for this tutorial. I chose the following, mainly because they worked for me. Initially we'll install PostgreSQL, PostGIS, and pgRouting.
+
+## Mac OSX
 
 After briefly looking through some quick github issues, I found it would be easier to abandon [Postgres.app](https://postgresapp.com/) and instead install all the parts using [Homebrew](https://brew.sh/).  If you don't already have it, install Homebrew.
 
@@ -25,12 +30,75 @@ Then in terminal run
 
 ```terminal
 brew update
+brew install postgresql
+brew install postgis
 brew install pgrouting
+brew install interline-io/planetutils/osmctools
+brew install osm2pgrouting
 ```
 
-This should install also PostgreSQL and PostGIS as dependencies. 
+This should install also PostgreSQL and PostGIS as dependencies. Osmctools contains osmconvert, which we will use later to convert from .pbf to .osm.
+
+## Windows
+
+## Install PostgreSQL
+Install PostgreSQL (I used v10.5) from [EnterpriseDB](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Uncheck stackbuilder, we will not use pgAdmin (a graphical interface for PostgreSQL) either though you may want to use it later.
+
+{% box setup1.png "Installation options for PostgreSQL" %}
+
+You will need to set a password for the database superuser, please remember this password.
+
+{% box setup2.png "Set a password for the postgres" %}
+
+## Install PostGIS
+Read about all the reasons you should use the OSGeo package, and all the things it comes with [here](https://postgis.net/windows_downloads/). 
+
+After that install version 10 from [OSGeo's PostGIS Bundle](http://download.osgeo.org/postgis/windows/pg10/). Select the bundle marked **setup**. This bundle contains PostGIS, pgRouting, and osm2pgrouting. 
+
+{% box setup3.png "Installation options for PostGIS" %}
+
+Click **no** on the popups that occur during the installation refering to raster support.
+
+## Install osmconvert
+Download [osmconvert](https://wiki.openstreetmap.org/wiki/Osmconvert#Windows), the **binary for Windows 32 bit** version. Create a folder and place this file in your project folder.
+
+# Download OpenStreetMap data
+
+Using the handy OSM extract data on [HOT's Export Tool](https://export.hotosm.org/en/v3/). Any osm export service should do, they have a friendly interface for exporting data. 
+
+If you would like the same export I used, [checkout this link](https://export.hotosm.org/en/v3/exports/841055f7-e5c3-4445-a074-2e3e9bdf6863).
+
+If you make your own:
+ 
+* Choose .pbf as your download file format.   
+* Check 'Commerical' and 'Transportation' on the "Tag Tree".
+* It may take a few minutes to create the export, they'll send you an email when it's done.
+
+# Download QGIS
+
+We'll use QGIS to put our maps together. [Download the latest version (3.2) via the standalone installer.](https://www.qgis.org/en/site/forusers/download.html) QGIS will come with Python as well. 
+
+# Install Checklist
+Please make sure you have done the following before [Maptime](https://www.meetup.com/MaptimeSEA/events/254009218/).
+
+### Mac OSX
+* Installed postgresql, pgrouting, osmctools, osm2pgrouting via homebrew
+* Installed QGIS
+* Have a folder with an OSM extract (ex. new-york-metro_export.pbf)
+
+### Windows
+* Installed PostgreSQL
+* Installed PostGIS
+* Installed QGIS
+* Have a folder with
+	* osmconvert.exe
+	* an OSM extract (ex. new-york-metro_export.pbf)
+	
+# *Pre-Maptime Setup Stop.*
 
 # Setting up PostgreSQL
+
+## Mac OSX
 
 To start PostgreSQL run the following command, replacing *path/to/workspace* with the folder you'd like PostgreSQL to store your data. If you'd like you can set this as an environment variable *PGDATA*. Read more on the [official docs.](https://www.postgresql.org/docs/current/static/server-start.html)
 
@@ -44,13 +112,29 @@ Then enter psql, PostgreSQL's terminal interface, and create a new database with
 psql postgres
 ```
 
-In psql (terminal should have `postgres=#` on the left) we'll create a routing database, connect to it, and add the PostGIS & pgRouting extensions. 
+## Windows
+
+Open the SQL Shell that was bundled with EnterpriseDB's PostgreSQL installation. Press enter to use the default server, database, and port. Enter the password you came up with during installation. 
+
+```terminal
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Password for user postgres:
+...
+postgres=#
+``` 
+
+## Create the Database
+
+In psql (terminal should have `postgres=#` on the left) we'll create a routing database, connect to it, and add the PostGIS & pgRouting extensions. Capitalization does not matter, I simply used it to emphasize psql keywords. 
 
 ```terminal
 CREATE DATABASE routing;
 \connect routing
 CREATE EXTENSION postgis;
 CREATE EXTENSION pgrouting;
+CREATE EXTENSION hstore;
 ```
 
 Check if the extensions where correctly installed by looking at the database's tables.
@@ -72,18 +156,7 @@ List of relations
 (5 rows)
 ```
 
-# Getting data into PostgreSQL
-
-### Install osm2pgrouting
-
-I used data extracted from OSM. This meant that I could use the handy [osm2pgrouting](https://github.com/pgRouting/osm2pgrouting) tool. You can download the tool from github and follow their installation instructions or install via homebrew.
-
-
-*Note: Open a new terminal window or enter "CTRL+Z" to leave psql first.*
-
-```terminal
-brew install osm2pgrouting
-```
+# Getting data into PostgreSQL 
 
 ### Download some OSM data
 
@@ -95,32 +168,24 @@ If you make your own:
 * Check 'Commerical' and 'Transportation' on the "Tag Tree".
 * It may take a few minutes to create the export, they'll send you an email when it's done.
 
-Unfortunately, osm2pgrouting only accepts .osm files (xml) and pbf files are an optimized version of that. To convert from pbf to osm, install [osmctools](https://wiki.openstreetmap.org/wiki/Osmconvert):
+Unfortunately, osm2pgrouting only accepts .osm files (xml) and .pbf files are an optimized version of that. 
 
-```terminal
-brew install interline-io/planetutils/osmctools
-```
+### Using osmconvert
 
-Then run (this will also remove some metadata tags from the file, which osm2pgrouting doesn't need): 
+Run the following command to convert from .pbf to .osm (this will also remove some metadata tags from the file, which osm2pgrouting doesn't need): 
 
 ```terminal
 osmconvert new-york-metro_export.pbf --drop-author --drop-version --out-osm -o=new-york-metro_export.osm
-head new-york-metro_export.osm
 ```
 
-You should see XML, which looks like:
-
-```markup
-<?xml version='1.0' encoding='UTF-8'?>
-<osm version="0.6" generator="osmconvert 0.8.7">
-	<node id="26769789" lat="40.6995927" lon="-74.1868914"/>
-	<node id="26769792" lat="40.6962016" lon="-74.1779077"/>
-...
-```
 ### Using osm2pgrouting
+
+The data we're using has been extracted from OSM. This meant that we can use the handy [osm2pgrouting](https://github.com/pgRouting/osm2pgrouting) tool. You can download the tool from github and follow their installation instructions, install via homebrew (Mac), or install it via OSGeo's PostGIS bundle (Windows).
 
 ### mapconfig.xml
 osm2pgrouting doesn't import all your osm data into PostgreSQL. It relies on what you tell it to import via the --conf parameter. Here we'll tell it to import anything that has the tag 'highway=...' and 'cuisine=pizza'. This is based on the [mapconfig\_for_cars.xml.](https://github.com/pgRouting/osm2pgrouting/blob/master/mapconfig_for_cars.xml)
+
+Copy the following configuration file and save it as **mapconfig.xml** in your project folder.
 
 ```markup
 <?xml version="1.0" encoding="UTF-8"?>
