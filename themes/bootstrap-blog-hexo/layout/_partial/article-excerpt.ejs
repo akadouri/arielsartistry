@@ -5,7 +5,7 @@
 		<% if (item.link) { %>
 			<a href="<%- item.link -%>"><%- item.title %></a>
 		<% } else { %>
-			<a href="<%- config.root %><%- item.path %>"><%- item.title %></a>		
+			<a href="<%- config.root %><%- item.path %>index.html"><%- item.title %></a>
 		<% } %>
 		<p><%-item.short %></p>
        </div>
@@ -15,21 +15,3 @@
     </div>
   </div>
 </div>
-	
-    <!-- Date and Author -->
-    <!-- <p class="blog-post-meta">
-        <%= item.date.format(config.date_format) %>
-        <% if(item.author) { %>
-            by <%- item.author %>
-        <% } %>
-    </p> -->
-    <!-- Content -->
-    <!-- <%- item.excerpt || item.content %> -->
-    <!-- Only display the Read More link if we are displaying an excerpt -->
-    <!-- <% if(item.excerpt) { %>
-        <p>
-            <a href="<%- config.root %><%- item.path %>">
-                <%= theme.excerpt_link %>
-            </a>
-        </p>
-    <% } %> -->
