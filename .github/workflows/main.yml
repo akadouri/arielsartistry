@@ -1,6 +1,9 @@
 name: build n deloy
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -26,7 +29,7 @@ jobs:
           aws-region: us-east-1
 
     - name: Copy files to S3
-      run: aws s3 sync public/ s3://arielsartistry.com-test
+      run: aws s3 sync public/ s3://arielsartistry.com
 
     - name: Invalidate Cloudfront
       run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_ID }} --paths '/*'
