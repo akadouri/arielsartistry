@@ -3,6 +3,7 @@ layout: post
 title: "Quackcon"
 date: 2017-10-20
 thumbnail: quackcon.png
+thumbnail_alt: Screenshot of modular viewing application 
 short: A modular viewing system, 3rd place at UO's Quackcon
 categories: hacking
 ---

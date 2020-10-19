@@ -2,11 +2,12 @@
 title: Green Lake Geography
 date: 2018-07-03 14:16:15
 thumbnail: img.png
+thumbnail_alt: Scanned notes and hand drawn map of Greenlake neighborhood
 short: "A report written for Geography 490: The Seattle Region"
 tags: seattle
 ---
 
-*This report was originally written for [Geography 490: Field Research - The Seattle Region](https://geography.washington.edu/courses/2018/winter/geog/490/a) and has been modified from its original version. It has been formatted to fit this screen. Check out the [class site](http://depts.washington.edu/geostory/omeka/seattle-stories-2018) for other neighborhood reports. If anyone is a longtime Green Lake resident - I'd love to talk about your experience in the neighborhood as it changed.* 
+*This report was originally written for [Geography 490: Field Research - The Seattle Region](https://geography.washington.edu/courses/2018/winter/geog/490/a) and has been modified from its original version. It has been formatted to fit this screen. Check out the [class site](http://depts.washington.edu/geostory/omeka/seattle-stories-2018) for other neighborhood reports. If anyone is a longtime Green Lake resident - I'd love to talk about your experience in the neighborhood as it changed.*
 
 This report examines the neighborhood bordering northeast Green Lake, which I will refer to as Green Lake throught this report. Additonally, the study area is bordered by East Green Lake Drive North, Latona Avenue Northeast, Woodlawn Avenue Northeast, and Ravenna Boulevard.
 
@@ -23,11 +24,11 @@ On Janurary 31st I made my first pass through the area, as shown in Fig 1. I beg
 
 ### Initial Research Questions:
 
-1. In what order this area develop? How and why did it develop this way? <br> 
+1. In what order this area develop? How and why did it develop this way? <br>
 I would like to look at the zoning map for this area, since it’s clear that only a portion is zoned for high rise apartments and the bordering areas are zoned for single family homes or condos. I would also want to see when the zoning changes were made, since the apartment buildings all appear new.
 
 2. Why are there so many pre-schools in this area? <br>
-There are two pre-schools, and a middle school in this area but the census data said this area had less children than average. Are the students residents of this area or neighboring areas? 
+There are two pre-schools, and a middle school in this area but the census data said this area had less children than average. Are the students residents of this area or neighboring areas?
 
 3. How is this area effected seasonally? <br>
 Unfortunately, this question is too longitudal for this class project, but this area is next to Green Lake park, which sees an influx of visitors in the summer. This area has many restaurants which may see increased business in the summer months. There is also a running store and a cycling store; the park draws people for both activies. Interviewing the businesses, counting people in the area, and looking at sales numbers would all help paint the seasonal picture.
@@ -62,12 +63,12 @@ Fig 9 shows Latona Ave and East Green Lake Drive, across the street is the park 
 
 {% box 1958_Arial_photo-min.png "Fig 10. 1958 Aerial Photo" %}
 
-Green Lake’s post settler history is not long, with just over a hundred and fifty years of development. A timeline of every change would be too much for this project, instead I’ll look at snapshots of the area to uncover when substantial changes were made. 
+Green Lake’s post settler history is not long, with just over a hundred and fifty years of development. A timeline of every change would be too much for this project, instead I’ll look at snapshots of the area to uncover when substantial changes were made.
 
 {% box 1959%205th%20and%2073rd.JPG "Fig 11. 1959 5th and 73rd, "Typical Home" %}
 
 
-The Green Lake neighborhood was annexed into the City of Seattle in 1891 along with Magnolia, Wallingford, Fremont, and the University District (Lange 1999). In my previous report, we saw how the area’s landscape was modified to suit the residents. The Olmsted Brothers proposed one park option, and the residents fought back changing the proposed shoreline. Still, the lake was filled and the streets carved up. Another snapshot, the area in 1958 and 1959, shows the properties mostly filled with buildings and Ravenna Ave is lined with grown trees. Photos were taken of the area to for rezoning considerations and show a “typical house”. 
+The Green Lake neighborhood was annexed into the City of Seattle in 1891 along with Magnolia, Wallingford, Fremont, and the University District (Lange 1999). In my previous report, we saw how the area’s landscape was modified to suit the residents. The Olmsted Brothers proposed one park option, and the residents fought back changing the proposed shoreline. Still, the lake was filled and the streets carved up. Another snapshot, the area in 1958 and 1959, shows the properties mostly filled with buildings and Ravenna Ave is lined with grown trees. Photos were taken of the area to for rezoning considerations and show a “typical house”.
 
 {% box zoning.jpg "Fig 12. 1972, 1980 and 2012 Zoning" %}
 
@@ -89,15 +90,15 @@ On August 15th 2003, after more than six decades, the VitaMilk Dairy Inc stopped
 
 In 2014, the property at 419 71st NE Street (across 71st from Green Lake Village) submitted applications to turn the old site into a mixed apartment and store front area. Today, those construction projects have mostly finished and businesses have moved in. It’s hard to imagine the area before all the apartment buildings. (If anyone is a longtime Green Lake resident - I'd love to talk about your experience in the neighborhood as it changed.)
 
-Before 419 71st NE Street was planned to become apartments, the developers had requested the area receive a prohibited use exception and turn the area into a parking lot for the residents of Green Lake Village. One nearby resident wrote in his strong opposition, stating that a parking lot would restrict the additional housing availability, and raise prices. 
+Before 419 71st NE Street was planned to become apartments, the developers had requested the area receive a prohibited use exception and turn the area into a parking lot for the residents of Green Lake Village. One nearby resident wrote in his strong opposition, stating that a parking lot would restrict the additional housing availability, and raise prices.
 
 {% box comments.jpg "Fig 13. Public Comments" %}
 
-Not everyone was excited for these changes. Fig 13. shows two comments about the development at 419 71st NE St. Interestingly, both of the comments are written from residents of a nearby apartment building of nearly the same size as the proposed building they are upset about, though their building was constructed in 2003 (Zillow 2018). 
+Not everyone was excited for these changes. Fig 13. shows two comments about the development at 419 71st NE St. Interestingly, both of the comments are written from residents of a nearby apartment building of nearly the same size as the proposed building they are upset about, though their building was constructed in 2003 (Zillow 2018).
 
 {% box public_comments.png "Fig 14. Meeting Notes" %}
 
-419 71st NE became anchored by Bartell Drugs. The final community meeting in April 2015 notes that the residents “felt the building will serve the needs of the community by providing a drug store and an enhanced look and feel of the neighborhood.” The neighborhood is expanding and, reflected by the unanimous vote from the Green Lake Chamber of Commerce, that is good for business. See Fig 14 for the curated public comments. After nearly 4 meetings in 8 months of design review, the building would pass another hurdle. 12 months after the first design review meeting, the master permit was issued (Fig 15). 419 71st Ave NE would become 130 residential units, 106 below ground parking spaces, and 14,609 square feet of retail space. 
+419 71st NE became anchored by Bartell Drugs. The final community meeting in April 2015 notes that the residents “felt the building will serve the needs of the community by providing a drug store and an enhanced look and feel of the neighborhood.” The neighborhood is expanding and, reflected by the unanimous vote from the Green Lake Chamber of Commerce, that is good for business. See Fig 14 for the curated public comments. After nearly 4 meetings in 8 months of design review, the building would pass another hurdle. 12 months after the first design review meeting, the master permit was issued (Fig 15). 419 71st Ave NE would become 130 residential units, 106 below ground parking spaces, and 14,609 square feet of retail space.
 
 {% box final_permit.png "Fig 15. Final Decision" %}
 
@@ -122,4 +123,3 @@ Frey, C., 2003. Got milk? After 6 decades, local dairy will be saying “no” [
 Keeley, S., 2014. Green Lake’s Vitamilk Dairy Site Soon to be Mixed-Use Complex [WWW Document]. Curbed Seattle. URL https://seattle.curbed.com/2014/8/8/10062688/green-lakes-vitamilk-dairy-site-soon-to-be-mixeduse-complex
 
 Lange, G., 1999. Seattle doubles in size by annexing north-of-downtown communities on May 3, 1891. - HistoryLink.org [WWW Document]. URL http://www.historylink.org/File/2214
-

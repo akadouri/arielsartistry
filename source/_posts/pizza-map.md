@@ -2,6 +2,7 @@
 title:  "NYC Pizza Routes"
 date:   2018-08-01 21:31:51 -0800
 thumbnail: pizza_routes.png
+thumbnail_alt: Map of routes from Penn Station to NYC pizza joints that looks like a pizza.
 short: Routing to pizza places in NYC.
 ---
 
@@ -15,8 +16,8 @@ The map above shows travel distances from Penn Station to 194 NYC pizza places. 
 
 A while ago I tried to find a tutorial for pgRouting on Mac OSX. I couldn't really find anything in one resource so after a weekend of fumbling through many tutorials I found managed to put together Pizza Map 1.0. I decided to put together this tutorial for anyone else interested in a routing crash course.
 
-## Background knowledge 
-This tutorial will assume comfort with terminal and some SQL, though you should still be able to make it through by copying and modifying the examples I provide. To aggregate many routes together the routes, the tutorial goes into using Python. If you have any questions, feel free to reach out. 
+## Background knowledge
+This tutorial will assume comfort with terminal and some SQL, though you should still be able to make it through by copying and modifying the examples I provide. To aggregate many routes together the routes, the tutorial goes into using Python. If you have any questions, feel free to reach out.
 
 # Installation
 
@@ -51,9 +52,9 @@ You will need to set a password for the database superuser, please remember this
 {% box setup2.png "Set a password for the postgres" %}
 
 ## Install PostGIS
-Read about all the reasons you should use the OSGeo package, and all the things it comes with [here](https://postgis.net/windows_downloads/). 
+Read about all the reasons you should use the OSGeo package, and all the things it comes with [here](https://postgis.net/windows_downloads/).
 
-After that install version 10 from [OSGeo's PostGIS Bundle](http://download.osgeo.org/postgis/windows/pg10/). Select the bundle marked **setup**. This bundle contains PostGIS, pgRouting, and osm2pgrouting. 
+After that install version 10 from [OSGeo's PostGIS Bundle](http://download.osgeo.org/postgis/windows/pg10/). Select the bundle marked **setup**. This bundle contains PostGIS, pgRouting, and osm2pgrouting.
 
 {% box setup3.png "Installation options for PostGIS" %}
 
@@ -64,19 +65,19 @@ Download [osmconvert](https://wiki.openstreetmap.org/wiki/Osmconvert#Windows), t
 
 # Download OpenStreetMap data
 
-Using the handy OSM extract data on [HOT's Export Tool](https://export.hotosm.org/en/v3/). Any osm export service should do, they have a friendly interface for exporting data. 
+Using the handy OSM extract data on [HOT's Export Tool](https://export.hotosm.org/en/v3/). Any osm export service should do, they have a friendly interface for exporting data.
 
 If you would like the same export I used, [checkout this link](https://export.hotosm.org/en/v3/exports/841055f7-e5c3-4445-a074-2e3e9bdf6863).
 
 If you make your own:
- 
+
 * Choose .pbf as your download file format.   
 * Check 'Commerical' and 'Transportation' on the "Tag Tree".
 * It may take a few minutes to create the export, they'll send you an email when it's done.
 
 # Download QGIS
 
-We'll use QGIS to put our maps together. [Download the latest version (3.2) via the standalone installer.](https://www.qgis.org/en/site/forusers/download.html) QGIS will come with Python as well. 
+We'll use QGIS to put our maps together. [Download the latest version (3.2) via the standalone installer.](https://www.qgis.org/en/site/forusers/download.html) QGIS will come with Python as well.
 
 # Install Checklist
 Please make sure you have done the following before [Maptime](https://www.meetup.com/MaptimeSEA/events/254009218/).
@@ -93,7 +94,7 @@ Please make sure you have done the following before [Maptime](https://www.meetup
 * Have a folder with
 	* osmconvert.exe
 	* an OSM extract (ex. new-york-metro_export.pbf)
-	
+
 # *Pre-Maptime Setup Stop.*
 
 # Setting up PostgreSQL
@@ -114,7 +115,7 @@ psql postgres
 
 ## Windows
 
-Open the SQL Shell that was bundled with EnterpriseDB's PostgreSQL installation. Press enter to use the default server, database, and port. Enter the password you came up with during installation. 
+Open the SQL Shell that was bundled with EnterpriseDB's PostgreSQL installation. Press enter to use the default server, database, and port. Enter the password you came up with during installation.
 
 ```terminal
 Server [localhost]:
@@ -123,11 +124,11 @@ Port [5432]:
 Password for user postgres:
 ...
 postgres=#
-``` 
+```
 
 ## Create the Database
 
-In psql (terminal should have `postgres=#` on the left) we'll create a routing database, connect to it, and add the PostGIS & pgRouting extensions. Capitalization does not matter, I simply used it to emphasize psql keywords. 
+In psql (terminal should have `postgres=#` on the left) we'll create a routing database, connect to it, and add the PostGIS & pgRouting extensions. Capitalization does not matter, I simply used it to emphasize psql keywords.
 
 ```terminal
 CREATE DATABASE routing;
@@ -156,23 +157,23 @@ List of relations
 (5 rows)
 ```
 
-# Getting data into PostgreSQL 
+# Getting data into PostgreSQL
 
 ### Download some OSM data
 
 I found handy OSM extract data on [HOT's Export Tool](https://export.hotosm.org/en/v3/). Any osm data should do, they just have a friendly interface for exporting data. If you would like the same export I used, [checkout this link](https://export.hotosm.org/en/v3/exports/841055f7-e5c3-4445-a074-2e3e9bdf6863).
 
 If you make your own:
- 
+
 * Choose .pbf as your download file format.   
 * Check 'Commerical' and 'Transportation' on the "Tag Tree".
 * It may take a few minutes to create the export, they'll send you an email when it's done.
 
-Unfortunately, osm2pgrouting only accepts .osm files (xml) and .pbf files are an optimized version of that. 
+Unfortunately, osm2pgrouting only accepts .osm files (xml) and .pbf files are an optimized version of that.
 
 ### Using osmconvert
 
-Run the following command to convert from .pbf to .osm (this will also remove some metadata tags from the file, which osm2pgrouting doesn't need): 
+Run the following command to convert from .pbf to .osm (this will also remove some metadata tags from the file, which osm2pgrouting doesn't need):
 
 ```terminal
 osmconvert new-york-metro_export.pbf --drop-author --drop-version --out-osm -o=new-york-metro_export.osm
@@ -211,11 +212,11 @@ Copy the following configuration file and save it as **mapconfig.xml** in your p
 
   <tag_name name="cuisine" id="2">
     <tag_value name="pizza" id="201" />
-  </tag_name> 
+  </tag_name>
 </configuration>
 ```
 
-If you installed osm2pgrouting successfully, you should be able to run the following command (in terminal, outside of psql), which will begin importing your OSM data into PostgreSQL. 
+If you installed osm2pgrouting successfully, you should be able to run the following command (in terminal, outside of psql), which will begin importing your OSM data into PostgreSQL.
 
 ```terminal
 osm2pgrouting --f new-york-metro_export.osm --conf mapconfig.xml --dbname routing --username USERNAME --clean --addnodes
@@ -223,7 +224,7 @@ osm2pgrouting --f new-york-metro_export.osm --conf mapconfig.xml --dbname routin
 
 * the USERNAME is the one which invoked brew, which can be found on the "Owner" column through pqsl's `\d` command from earlier.
 
-This process will take a while, osm2pgrouting loads all the data into memory and then inserts it into the database. 
+This process will take a while, osm2pgrouting loads all the data into memory and then inserts it into the database.
 
 ### Check for data
 
@@ -247,7 +248,7 @@ You can see all the new tables with `\d`.
 # Running pgRouting queries
 This part is adapted from this [OSGeo](https://workshop.pgrouting.org/2.4.11/en/chapters/shortest_path.html) tutorial and the [pgRouting documentation](https://docs.pgrouting.org/latest/en/index.html).
 
-We're going to build a query to find a route between two points, using their source or target IDs that were created by osm2pgrouting. These will appear in the "source" and "target" columns of the ways table. At this point, querying data in psql can become a little cumbersome. If you're going to continue working with PostgreSQL or databases in general, I recommend downloading [DBeaver](https://dbeaver.io/). 
+We're going to build a query to find a route between two points, using their source or target IDs that were created by osm2pgrouting. These will appear in the "source" and "target" columns of the ways table. At this point, querying data in psql can become a little cumbersome. If you're going to continue working with PostgreSQL or databases in general, I recommend downloading [DBeaver](https://dbeaver.io/).
 
 *Note: my numbers may not necessarily match yours depending on your OSM extract and the order they were imported into the database.*
 
@@ -256,7 +257,7 @@ The source will be the road we route to all the pizza nodes from. To find the 's
 
 ```sql
 SELECT source
-FROM ways 
+FROM ways
 WHERE osm_id = 195743190;
 ```
 ```sql
@@ -267,7 +268,7 @@ Then we need to find a destination, or 'target'. You can open up OpenStreetMap a
 
 ```sql
 SELECT *
-FROM osm_nodes 
+FROM osm_nodes
 WHERE tag_value = 'pizza'
 LIMIT 1;
 ```
@@ -280,7 +281,7 @@ Now, our routing network relies on routing from ways to ways, not points to ways
 ```sql
 SELECT source
 FROM ways
-ORDER BY ways.the_geom <-> (SELECT the_geom FROM osm_nodes WHERE osm_id = 2063693322 limit 10) 
+ORDER BY ways.the_geom <-> (SELECT the_geom FROM osm_nodes WHERE osm_id = 2063693322 limit 10)
 LIMIT 1;
 ```
 
@@ -292,7 +293,7 @@ Now we can finally run a pgRouting query. We'll use [pgr_dijkstra](https://docs.
 ```sql
 SELECT *
 FROM pgr_dijkstra('
-	SELECT gid as id, source, target, length as cost 
+	SELECT gid as id, source, target, length as cost
 	FROM ways',
 	181766, 2102, false);
 ```
@@ -311,7 +312,7 @@ If we want to attach geometry to this route, join that route with the ways table
 ```sql
 SELECT *
 FROM (SELECT * FROM pgr_dijkstra('
-	SELECT gid as id, source, target, length as cost 
+	SELECT gid as id, source, target, length as cost
 	FROM ways',
 	181766, 2102, false)) as route, ways
 WHERE route.edge = ways.gid;
@@ -327,29 +328,29 @@ WHERE route.edge = ways.gid;
 {% box database_connection.png "Database connection configuration." %}
 
 Open up QGIS. Go to Layer -> Add Layer -> Add PostGIS layer.
-  
+
 Click on "new" and enter *routing* as the Name.  
- 
-Enter *routing* as the database unless you entered something else earlier. Hit "OK" and then "connect". 
+
+Enter *routing* as the database unless you entered something else earlier. Hit "OK" and then "connect".
 
 Open the "public" tab under schema and highlight "ways" and press add.  
 
-This should add the ways (road network). 
+This should add the ways (road network).
 
 {% box database_manager.png "Database manager configuration." %}
 
 From the menu, open Database -> DB Manager -> DB Manager.
 
-In the database manager, open PostGIS -> Routing -> public. 
+In the database manager, open PostGIS -> Routing -> public.
 
-From the menu, click on Database -> SQL Window (F2). 
- 
-Past the following query, with your source(181766)/target(2102) numbers. 
+From the menu, click on Database -> SQL Window (F2).
+
+Past the following query, with your source(181766)/target(2102) numbers.
 
 ```sql
 SELECT the_geom, agg_cost
 FROM (SELECT * FROM pgr_dijkstra('
-	SELECT gid as id, source, target, length as cost 
+	SELECT gid as id, source, target, length as cost
 	FROM ways',
 	181766, 2102, false)) as route, ways
 WHERE route.edge = ways.gid;
@@ -368,13 +369,13 @@ A new "Query Layer" will be added to your map. The default style may blend in wi
 
 # Having more fun with python
 
-In this next section, I'm going to use a python script to loop through all the pizza nodes and route to them. While this could probably also be done as a PostgreSQL function, I find it more practical to branch into python. Especially if you'd like to continue processing your data there. 
+In this next section, I'm going to use a python script to loop through all the pizza nodes and route to them. While this could probably also be done as a PostgreSQL function, I find it more practical to branch into python. Especially if you'd like to continue processing your data there.
 
 These next steps are also available as a [Jupyter Notebook on my github](https://github.com/akadouri/arielsartistry/tree/master/source/_posts/pizza-map/Tutorial%20Script.ipynb).
 
 ### [Psycopg](http://initd.org/psycopg/docs/usage.html)
 
-Pyscopg is a handy python library that provides an API for accessing Postgresql. 
+Pyscopg is a handy python library that provides an API for accessing Postgresql.
 
 Import the libraries we'll use
 
@@ -390,7 +391,7 @@ conn = psycopg2.connect("dbname=routing user=ariel")
 cur = conn.cursor()
 ```
 
-Find the "source" way. 
+Find the "source" way.
 This will be the road we route to all the pizza nodes from. To find the 'source' go to https://www.openstreetmap.org/ and find the way you'd like to route from. In my case I used the road in front of Penn Station, https://www.openstreetmap.org/way/195743190.
 
 ```python
@@ -407,7 +408,7 @@ cur.execute("SELECT * FROM osm_nodes WHERE tag_value = 'pizza'")
 osm_ids = []
 for record in cur:
     osm_ids.append(record[0])
-    
+
 print("We're going to route to: " + str(len(osm_ids)) + " pizza nodes.")
 ```
 
@@ -435,7 +436,7 @@ def writeRoute(route):
             writer.writerow(r)
 ```
 
-Finally, loop through all the nearest streets to each pizza node and route to them from a common source. 
+Finally, loop through all the nearest streets to each pizza node and route to them from a common source.
 Tip: add a *break* to the loop and test just one route first!
 
 ```python
@@ -447,7 +448,7 @@ for osm_id in osm_ids_streets:
     writeRoute(cur.fetchall())
 ```
 
-If you're not using the Jupyter notebook, put all the above code blocks into a single script.py and run. 
+If you're not using the Jupyter notebook, put all the above code blocks into a single script.py and run.
 
 ```python
 python3 script.py
@@ -466,8 +467,8 @@ pg_ctl stop
 ```
 
 # Where to go from here
-* The future is multimodal, but this tutorial only went over routing by cars. osm2pgrouting also has a mapconfig for bicycles and pedestrians. 
-* I also only used Dijkstra's algorithm, but pgRouting has support for many other routing algorithms. 
+* The future is multimodal, but this tutorial only went over routing by cars. osm2pgrouting also has a mapconfig for bicycles and pedestrians.
+* I also only used Dijkstra's algorithm, but pgRouting has support for many other routing algorithms.
 * Consider a different analysis, or different focus area. Some areas have better OSM coverage than others. Instead of only looking for areas with great coverage, I think it can inspire OSM contributions if you focused on an area that was incomplete.
 
 
@@ -481,5 +482,5 @@ pg_ctl stop
 * [OS Geo shortest path tutorial](http://download.osgeo.org/pgrouting/foss4g2010/workshop/docs/html/chapters/shortest_path.html)
 * [psycopg](http://initd.org/psycopg/)
 
-# Questions, comments? 
+# Questions, comments?
 Feel free to email me or message me on [twitter.](https://twitter.com/akadouri)
