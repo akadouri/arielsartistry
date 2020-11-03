@@ -1,7 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day1.png
+thumbnail: day2.png
+thumbnail_alt: Routes from subway stops to closet coffee shops, in the style of the Anthora coffee cup.
 short: A map a day keeps November at bay.
 ---
 
@@ -199,6 +200,23 @@ ORDER BY count(*) desc;
 I popped this final query into the QGIS Database Manager, threw on some styling to match the yellow of a parking violation, and there we have it. I skipped quite a few steps and directions I took while figuring this all out. If you have any questions feel free to reach out!
 
 # Day 2: Lines
+
+{% box day2.png "Routes from subway stops to closet coffee shops, in the style of the Anthora coffee cup." %}
+
+Data Sources:
+- [MTA Subway Stations](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49)
+- [LION Single Line Street Base Map](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-lion.page)
+- amenity=cafe from OpenStreetMap contributors (extracted using OverpassTurbo)
+- Font: [Adonais](https://www.urbanfonts.com/fonts/Adonais.font)
+
+Tools:
+- QGIS
+- PostgreSQL/PostGIS/pgRouting
+- python in a jupyter notebook
+
+No write up today, similar process to the pizza map. 
+
+# Day 3: Polygons
 
 Coming soon...
 
