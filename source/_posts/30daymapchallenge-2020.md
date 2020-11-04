@@ -1,9 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day2.png
-thumbnail_alt: Routes from subway stops to closet coffee shops, in the style of the Anthora coffee cup.
-short: A map a day keeps November at bay.
+thumbnail: day3.png
+thumbnail_alt: Cartogram of NYC boroughs based on population.
 ---
 
 # Intro
@@ -119,7 +118,7 @@ Here we can see the code **57310** with the borough code **2** (Bronx) appended 
 
 I decided I wanted to look just at Brooklyn parking violations in 2020, and made a handy table with the subset of those violations. One of the columns, "violationlocation", included a precinct number which could be filtered on to Brooklyn precincts (between 60 and 94).
 
-```
+```sql
 CREATE table streetcodes as
 SELECT streetcode1, streetcode2, streetcode3, housenumber, streetname, vehiclecolor, summonsnumber
 FROPM parking 
@@ -164,7 +163,7 @@ A bunch of fiddling later and...
 
 the (almost) final query:
 
-```
+```sql
 CREATE TABLE positions AS 
 WITH streetcode AS (
 	SELECT case 
@@ -218,5 +217,127 @@ No write up today, similar process to the pizza map.
 
 # Day 3: Polygons
 
-Coming soon...
+{% box day3.png "Cartogram of NYC boroughs based on population." %}
 
+Data Sources:
+- [Census Population Estimate 2019](https://www.census.gov/quickfacts/fact/table/newyorkcitynewyork,bronxcountybronxboroughnewyork,kingscountybrooklynboroughnewyork,newyorkcountymanhattanboroughnewyork,queenscountyqueensboroughnewyork,richmondcountystatenislandboroughnewyork/PST045219)
+
+Tools:
+- python in a jupyter notebook
+- shapely, matplotlib
+
+For today's map I decided to create a cartogram of NYC using the population of each borough as the area for each polygon. After an initial sketch on paper I opened up a jupyter notebook, and started plotting away...
+
+Some utils
+
+```python
+
+import matplotlib.pyplot as plt
+from shapely.geometry import Point, LineString
+from shapely.wkt import loads
+
+SHOW_POINTS = False
+SHOW_POINT_LABELS = False
+
+def plot_coord_nums(coords, color):
+    count = 0
+    for coord in coords:
+        plt.plot(*coord, color + 'o')
+        if SHOW_POINT_LABELS:
+            plt.axis('on')
+            plt.text(coord[0] + .1, coord[1] + .18, count, color=color)
+        count += 1
+
+def plot_shapes(shapes):
+    plt.axis('off')
+    
+    for shape, color in shapes:
+        if isinstance(shape, (Point, LineString)):
+            plt.plot(*shape.coords.xy, color)
+            if SHOW_POINTS: 
+                plot_coord_nums(shape.coords, color)
+        elif isinstance(shape, Polygon):
+            plt.plot(*shape.exterior.coords.xy, color)
+            if SHOW_POINTS: 
+                plot_coord_nums(shape.exterior.coords, color)
+        else:
+            raise RuntimeError("Unsupported Type")
+```
+
+And then the shapes
+
+```python
+print("place,        area, pop (m)")
+staten = loads("POLYGON((0 0, 0 .97, .97 0, 0 0))")
+print("staten.area  ", round(staten.area, 2), " 0.47")
+
+man_left = .4
+man_tip = .76
+man_height = 2.2
+man = loads(f"POLYGON((.4 1, .75 {man_tip}, 1.1 1, 1.1 {1 + man_height}, .4 {1 + man_height}, .4 1))")
+print("man.area     ", round(man.area, 2), " 1.62")
+
+
+bronx_width = 2.13
+bronx = loads(f"POLYGON(({man_left} 3.35, "
+              "1.5 3.35,"
+              "1.5 2.5,"
+              f"{man_left + bronx_width} 2.5, "
+              f"{man_left + bronx_width} 3.6, "
+              f"{man_left} 3.6, "
+              f"{man_left} 3.35))")
+print("bronx.area   ", round(bronx.area, 2), " 1.41")
+
+
+brooklyn_width = bronx_width - 3
+brooklyn = loads(f"POLYGON(({man_tip + .5} {man_tip}, "
+                 f"1.5 1.923, "
+                  "2.5 1.25,"
+                  "3 1.3, "
+                  "3 0, "
+                 f"1.25 0, {man_tip + .5} {man_tip}))")
+print("brooklyn.area", round(brooklyn.area, 2), " 2.55")
+
+
+queens = loads(f"POLYGON((1.5 1.983, "
+               f"1.5 1.983, "
+                "2.5 1.25, "
+                "3 1.3,"
+                "3 0, "
+                "3.5 0, "
+                "3.5 2.25, "
+                "1.5 2.25, "
+               f"1.5 1.983))")
+
+print("queens.area  ", round(queens.area, 2), " 2.25")
+
+
+plot_shapes([(staten, 'r'), (man, 'g'),  (bronx, 'y'),  (queens, 'm'),  (brooklyn, 'b')])
+```
+
+```python
+place,        area, pop (m)
+staten.area   0.47  0.47
+man.area      1.62  1.62
+bronx.area    1.41  1.41
+brooklyn.area 2.55  2.55
+queens.area   2.25  2.25
+```
+
+And for the final shape WKT's
+
+```python
+print("staten", staten.wkt)
+print("man", man.wkt)
+print("bronx", bronx.wkt)
+print("brooklyn", brooklyn.wkt)
+print("queens", queens.wkt)
+```
+
+```python
+staten POLYGON ((0 0, 0 0.97, 0.97 0, 0 0))
+man POLYGON ((0.4 1, 0.75 0.76, 1.1 1, 1.1 3.2, 0.4 3.2, 0.4 1))
+bronx POLYGON ((0.4 3.35, 1.5 3.35, 1.5 2.5, 2.53 2.5, 2.53 3.6, 0.4 3.6, 0.4 3.35))
+brooklyn POLYGON ((1.26 0.76, 1.5 1.923, 2.5 1.25, 3 1.3, 3 0, 1.25 0, 1.26 0.76))
+queens POLYGON ((1.5 1.983, 1.5 1.983, 2.5 1.25, 3 1.3, 3 0, 3.5 0, 3.5 2.25, 1.5 2.25, 1.5 1.983))
+```
