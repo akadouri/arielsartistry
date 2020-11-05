@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day3.png
-thumbnail_alt: Cartogram of NYC boroughs based on population.
+thumbnail: day4.png
+thumbnail_alt: Prospect Park with a simplified hexagon boundary.
 ---
 
 # Intro
@@ -341,3 +341,19 @@ bronx POLYGON ((0.4 3.35, 1.5 3.35, 1.5 2.5, 2.53 2.5, 2.53 3.6, 0.4 3.6, 0.4 3.
 brooklyn POLYGON ((1.26 0.76, 1.5 1.923, 2.5 1.25, 3 1.3, 3 0, 1.25 0, 1.26 0.76))
 queens POLYGON ((1.5 1.983, 1.5 1.983, 2.5 1.25, 3 1.3, 3 0, 3.5 0, 3.5 2.25, 1.5 2.25, 1.5 1.983))
 ```
+
+# Day 4: Hexagon
+
+{% box day4.png "Prospect Park with a simplified hexagon boundary." %}
+
+Data Sources:
+- [Open Space (Parks)](https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm)
+- OpenStreetMap
+
+Tools:
+- QGIS
+- Affinity Designer
+
+Who says all these hexagon day maps need to be hexbins? This map has six(ish) sides! It's also rotated aggressively because this is how I map Prospect Park in my mind.
+
+First time using Affinity Designer. I like it a lot, it definitely makes more sense to be using vector image software for my maps than a raster program like Photoshop. It was easier to pick up today than any of the times I've ever tried to use Inkscape.
