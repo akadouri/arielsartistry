@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day4.png
-thumbnail_alt: Prospect Park with a simplified hexagon boundary.
+thumbnail: day5.png
+thumbnail_alt: Map of unnamed coastline in minimal style
 ---
 
 # Intro
@@ -357,3 +357,14 @@ Tools:
 Who says all these hexagon day maps need to be hexbins? This map has six(ish) sides! It's also rotated aggressively because this is how I map Prospect Park in my mind.
 
 First time using Affinity Designer. I like it a lot, it definitely makes more sense to be using vector image software for my maps than a raster program like Photoshop. It was easier to pick up today than any of the times I've ever tried to use Inkscape.
+
+# Day 5: Blue
+
+{% box day5.png "Unnamed coastline in minimal style." %}
+
+Data Sources:
+- OpenStreetMap
+
+Tools:
+- QGIS
+- Affinity Designer
