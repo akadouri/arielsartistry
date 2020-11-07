@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day5.png
-thumbnail_alt: Map of unnamed coastline in minimal style
+thumbnail: day6.png
+thumbnail_alt: 2019 Algal booms status, Finger Lakes.
 ---
 
 # Intro
@@ -368,3 +368,17 @@ Data Sources:
 Tools:
 - QGIS
 - Affinity Designer
+
+
+# Day 6: Red
+
+{% box day6.png "2019 Algal booms status, Finger Lakes." %}
+
+Data Sources:
+- [NY DEC Harmful Algal Blooms Report](https://www.dec.ny.gov/docs/water_pdf/habsextentsummary.pdf)
+- [NYS GIS Hydrography](http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=928)
+
+Tools:
+- QGIS
+
+Stuck with the basics today, load some data in QGIS and fiddle with the knobs.
