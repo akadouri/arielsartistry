@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day6.png
-thumbnail_alt: 2019 Algal booms status, Finger Lakes.
+thumbnail: day7.png
+thumbnail_alt: Fort Greene in Green
 ---
 
 # Intro
@@ -382,3 +382,14 @@ Tools:
 - QGIS
 
 Stuck with the basics today, load some data in QGIS and fiddle with the knobs.
+
+# Day 7: Green
+
+{% box day7.png "Fort Greene Park in Green." %}
+
+Data Sources:
+- [NYC 1 Foot Integer DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-Integer-Raster/7kuu-zah7/)
+- [Open Space (Parks)](https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm)
+
+Tools:
+- QGIS (GDAL via Processing Toolbox)
