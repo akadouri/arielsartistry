@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day7.png
-thumbnail_alt: Fort Greene in Green
+thumbnail: day8.png
+thumbnail_alt: Ufa in yellow theme
 ---
 
 # Intro
@@ -393,3 +393,15 @@ Data Sources:
 
 Tools:
 - QGIS (GDAL via Processing Toolbox)
+
+
+# Day 8: Yellow
+
+{% box day8.png "Ufa in Yellow" %}
+
+Data Sources:
+- OpenStreetMap
+
+Tools:
+- QGIS
+- Affinity Designer
