@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day8.png
-thumbnail_alt: Ufa in yellow theme
+thumbnail: day9.png
+thumbnail_alt: Monochrome Bathymetry of Lake Crescent.
 ---
 
 # Intro
@@ -401,6 +401,18 @@ Tools:
 
 Data Sources:
 - OpenStreetMap
+
+Tools:
+- QGIS
+- Affinity Designer
+
+
+# Day 9: Monochrome
+
+{% box day9.png "Monochrome Bathymetry of Lake Crescent." %}
+
+Data Sources:
+- [USGS](https://www.sciencebase.gov/catalog/item/5eea74cb82ce3bd58d8572af)
 
 Tools:
 - QGIS
