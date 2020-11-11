@@ -428,7 +428,9 @@ Data Sources:
 Tools:
 - Mapbox Studio, Mapbox GL JS
 
-[Enter the GRID.](https://arielsartistry.com/2020/11/01/30daymapchallenge-2020/index.html)
+Controls are WASD or directional arrows. Tried to make it work on mobile but it's going to be a bumpy ride. Use portrait mode if you do.
+
+[Enter the GRID.](https://arielsartistry.com/2020/11/01/30daymapchallenge-2020/day10/index.html)
 
 Theme music - [Tron Legacy - Soundtrack OST - 02 The Grid - Daft Punk
 ](https://www.youtube.com/watch?v=tFXYuw96d0c&list=PL10BBAAAFC8626119&index=2)
