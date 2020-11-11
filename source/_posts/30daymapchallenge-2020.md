@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day9.png
-thumbnail_alt: Monochrome Bathymetry of Lake Crescent.
+thumbnail: day10.gif
+thumbnail_alt: Preview moving around NYC with interative webmap GRID.
 ---
 
 # Intro
@@ -417,3 +417,19 @@ Data Sources:
 Tools:
 - QGIS
 - Affinity Designer
+
+# Day 10: Grid
+
+{% box day10.gif "Preview moving around NYC in interactive webmap GRID." %}
+
+Data Sources:
+- [LION Single Line Street Base Map](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-lion.page)
+
+Tools:
+- Mapbox Studio, Mapbox GL JS
+
+[Enter the GRID.](https://arielsartistry.com/2020/11/01/30daymapchallenge-2020/index.html)
+
+Theme music - [Tron Legacy - Soundtrack OST - 02 The Grid - Daft Punk
+](https://www.youtube.com/watch?v=tFXYuw96d0c&list=PL10BBAAAFC8626119&index=2)
+

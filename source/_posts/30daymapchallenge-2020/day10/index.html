@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GRID</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/flatbush@3.3.0/flatbush.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.2/proj4.min.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYWthZG91cmkiLCJhIjoiY2toY3NscXg2MDVrczJyc2JzOGx5M28zeiJ9.WguVELUcWPzw5DhCjCcQDQ";
+
+      center = [-73.98271017, 40.75677356];
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/akadouri/ckhcp0qqj07po19mrq8iwkhlc",
+        zoom: 14.246,
+        bearing: -60.8,
+        center: center,
+        maxBounds: [
+          [-74.05025482177734, 40.702764986136835],
+          [-73.84872436523438, 40.875881815628695],
+        ],
+      });
+
+      map["dragPan"].disable();
+      map["doubleClickZoom"].disable();
+
+      var proj4_2263 =
+        "+proj=lcc +lat_1=41.03333333333333 +lat_2=40.66666666666666 +lat_0=40.16666666666666 +lon_0=-74 +x_0=300000.0000000001 +y_0=0 +ellps=GRS80 +datum=NAD83 +to_meter=0.3048006096012192 +no_defs ";
+      var index = null;
+      var anchors = null;
+
+      fetch("anchors.geojson")
+        .then((response) => response.json())
+        .then((json) => {
+          anchors = json["features"];
+          console.log();
+          index = new Flatbush(json["features"].length);
+          console.log(json["features"][0]["geometry"]["coordinates"]);
+
+          json["features"].forEach((element) => {
+            index.add(
+              element["geometry"]["coordinates"][0],
+              element["geometry"]["coordinates"][1],
+              element["geometry"]["coordinates"][0],
+              element["geometry"]["coordinates"][1]
+            );
+          });
+          index.finish();
+        });
+
+      map.on("load", function () {
+        data = {
+          type: "FeatureCollection",
+          features: [
+            {
+              type: "Feature",
+              properties: {},
+              geometry: {
+                type: "LineString",
+                coordinates: [center],
+              },
+            },
+          ],
+        };
+        map.addSource("trace", {
+          type: "geojson",
+          data: data,
+          lineMetrics: true,
+        });
+        map.addLayer({
+          id: "trace",
+          type: "line",
+          source: "trace",
+          paint: {
+            "line-color": "yellow",
+            "line-opacity": 0.75,
+            "line-width": 5,
+            "line-gradient": [
+              "interpolate",
+              ["linear"],
+              ["line-progress"],
+              0,
+              "#10464d",
+              1,
+              "#39d1e3",
+            ],
+          },
+        });
+
+        map.jumpTo({
+          center: center,
+        });
+
+        last_coord = center.slice(0);
+        last_coord_index = null;
+
+        document.addEventListener("keydown", logKey);
+
+        function logKey(e) {
+          console.log(e.code);
+
+          if (e.code == "ArrowRight" || e.code == "KeyD") {
+            console.log("pressed up");
+            last_coord[0] += 0.000874639999992155;
+            last_coord[1] += 0.0013029200000005403;
+            console.log(last_coord);
+          }
+          if (e.code == "ArrowLeft" || e.code == "KeyA") {
+            last_coord[0] -= 0.000874639999992155;
+            last_coord[1] -= 0.0013029200000005403;
+          }
+          if (e.code == "ArrowUp" || e.code == "KeyW") {
+            last_coord[0] -= 0.003;
+            last_coord[1] += 0.001;
+          }
+          if (e.code == "ArrowDown" || e.code == "KeyS") {
+            last_coord[0] += 0.003;
+            last_coord[1] -= 0.001;
+          }
+
+          local_coord = proj4("EPSG:4326", proj4_2263, last_coord);
+          result = index.neighbors(local_coord[0], local_coord[1], 3);
+
+          if (result[0] == last_coord_index) {
+            result[0] = result[1];
+            last_coord_index = result[1];
+          }
+
+          next = proj4(
+            proj4_2263,
+            "EPSG:4326",
+            anchors[result[0]]["geometry"]["coordinates"]
+          );
+          last_coord = next;
+
+          data.features[0].geometry.coordinates.push(next.slice(0));
+
+          if (data.features[0].geometry.coordinates.length > 10) {
+            data.features[0].geometry.coordinates.shift();
+          }
+
+          map.getSource("trace").setData(data);
+          map.panTo(last_coord);
+        }
+
+        document.addEventListener("touchstart", handleStart, false);
+
+        function handleStart(e) {
+          console.log("width", screen.width);
+          console.log(e["touches"][0]["clientX"]);
+          console.log(e["touches"][0]["clientX"] / screen.width);
+
+          console.log("height", screen.height);
+          console.log(e["touches"][0]["clientY"]);
+
+          if (e["touches"][0]["clientX"] / screen.width < 1 / 3) {
+            logKey({ code: "ArrowLeft" });
+          } else if (e["touches"][0]["clientX"] / screen.width > 2 / 3) {
+            logKey({ code: "ArrowRight" });
+          } else if (e["touches"][0]["clientY"] / screen.height > 1 / 2) {
+            logKey({ code: "ArrowDown" });
+          } else {
+            logKey({ code: "ArrowUp" });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
