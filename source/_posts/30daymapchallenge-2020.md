@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day10.gif
-thumbnail_alt: Preview moving around NYC with interative webmap GRID.
+thumbnail: day11.png
+thumbnail_alt: Sunset Park Hillshade.
 ---
 
 # Intro
@@ -435,3 +435,14 @@ Controls are WASD or directional arrows. Tried to make it work on mobile but it'
 Theme music - [Tron Legacy - Soundtrack OST - 02 The Grid - Daft Punk
 ](https://www.youtube.com/watch?v=tFXYuw96d0c&list=PL10BBAAAFC8626119&index=2)
 
+# Day 11: 3D
+
+{% box day11.png "Sunset Park Hillshade." %}
+
+- [NYC 1 Foot Integer DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-Integer-Raster/7kuu-zah7/)
+- [Open Space (Parks)](https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm)
+
+Tools:
+- QGIS
+
+Need to spend some time looking into how to make those fancy Blender maps.
