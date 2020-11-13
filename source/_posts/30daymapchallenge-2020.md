@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day11.png
-thumbnail_alt: Sunset Park Hillshade.
+thumbnail: day12.jpg
+thumbnail_alt: Handdrawn map of fictional happy junction.
 ---
 
 # Intro
@@ -439,6 +439,7 @@ Theme music - [Tron Legacy - Soundtrack OST - 02 The Grid - Daft Punk
 
 {% box day11.png "Sunset Park Hillshade." %}
 
+Data Sources:
 - [NYC 1 Foot Integer DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-Integer-Raster/7kuu-zah7/)
 - [Open Space (Parks)](https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm)
 
@@ -446,3 +447,16 @@ Tools:
 - QGIS
 
 Need to spend some time looking into how to make those fancy Blender maps.
+
+# Day 12: No GIS
+
+{% box day12.jpg "Handdrawn map of fictional happy junction." %}
+
+Data Sources:
+- Imagination
+
+Tools:
+- Pencil
+- Paper
+- Stencil
+- Various Colored Micron Pens
