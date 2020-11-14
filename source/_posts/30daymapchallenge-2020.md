@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day12.jpg
-thumbnail_alt: Handdrawn map of fictional happy junction.
+thumbnail: day13.png
+thumbnail_alt: Landsat-8 True Color along Danjiang River.
 ---
 
 # Intro
@@ -460,3 +460,17 @@ Tools:
 - Paper
 - Stencil
 - Various Colored Micron Pens
+
+
+# Day 13: Raster
+
+{% box day13.png "Landsat-8 True Color along Danjiang River." %}
+
+Data Sources:
+- Landsat 8 (accessed via [Google Cloud](https://cloud.google.com/storage/docs/public-datasets/landsat))
+
+Tools:
+- QGIS & GDAL (exploratory)
+- Photoshop
+
+Followed this great tutorial from [NASA Earth Observatory](https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/10/22/how-to-make-a-true-color-landsat-8-image/) on creating true color images from Landsat 8 data. Also helped to read [this article](https://landsat.gsfc.nasa.gov/landsat-8/landsat-8-bands) on the different bands.  
