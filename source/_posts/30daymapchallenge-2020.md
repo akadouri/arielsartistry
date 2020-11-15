@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day13.png
-thumbnail_alt: Landsat-8 True Color along Danjiang River.
+thumbnail: day14.png
+thumbnail_alt: Mockup new bike lanes around Bartel Pritchard Square.
 ---
 
 # Intro
@@ -474,3 +474,17 @@ Tools:
 - Photoshop
 
 Followed this great tutorial from [NASA Earth Observatory](https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/10/22/how-to-make-a-true-color-landsat-8-image/) on creating true color images from Landsat 8 data. Also helped to read [this article](https://landsat.gsfc.nasa.gov/landsat-8/landsat-8-bands) on the different bands.  
+
+# Day 14: Climate Change
+
+{% box day14.png "Mockup new bike lanes around Bartel Pritchard Square." %}
+
+Data Sources:
+- [NYS Ortho Imagery](http://gis.ny.gov/gateway/mg/webserv/webserv.html)
+- Bicycle Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](www.flaticon.com)
+
+Tools:
+- QGIS
+- Affinity Designer
+
+Think about where you could use some bike lanes.
