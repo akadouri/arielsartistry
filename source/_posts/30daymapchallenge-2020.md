@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day14.png
-thumbnail_alt: Mockup new bike lanes around Bartel Pritchard Square.
+thumbnail: day16.png
+thumbnail_alt: Governors Island
 ---
 
 # Intro
@@ -480,7 +480,7 @@ Followed this great tutorial from [NASA Earth Observatory](https://earthobservat
 {% box day14.png "Mockup new bike lanes around Bartel Pritchard Square." %}
 
 Data Sources:
-- [NYS Ortho Imagery](http://gis.ny.gov/gateway/mg/webserv/webserv.html)
+- [NYS Ortho Imagery](http://gis.ny.gov/gateway/mg/index.html)
 - Bicycle Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](www.flaticon.com)
 
 Tools:
@@ -488,3 +488,29 @@ Tools:
 - Affinity Designer
 
 Think about where you could use some bike lanes.
+
+# Day 15: Connections
+
+{% box day15.png "Nearby stops between 2 train and B99 buses." %}
+
+Data Sources:
+- [MTA Subway Stations](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49)
+- [MTA Bus GTFS](http://web.mta.info/developers/developer-data-terms.html#data)
+
+Tools:
+- QGIS
+- PostGIS
+
+The b99 train was added after the nightly subway shutdowns to replace the 2 train. I didn't realize this until too far into placing the labels, otherwise I belive the A/C and b25 would have made more sense to pair. Wrote some wild queries to explore this stuff, though most I didn't end up using. One even included **HAVING**.
+
+# Day 16: Islands
+
+{% box day16.png "Governors Island." %}
+
+Data Sources:
+- [NYS Ortho Imagery](http://gis.ny.gov/gateway/mg/index.html)
+- OpenStreetMap
+
+Tools:
+- QGIS
+- Affinity Designer
