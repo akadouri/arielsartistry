@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day16.png
-thumbnail_alt: Governors Island
+thumbnail: day17.png
+thumbnail_alt: Brooklyn Union Gas Company Metropolitan Works Branch, Gowanus
 ---
 
 # Intro
@@ -510,6 +510,18 @@ The b99 train was added after the nightly subway shutdowns to replace the 2 trai
 Data Sources:
 - [NYS Ortho Imagery](http://gis.ny.gov/gateway/mg/index.html)
 - OpenStreetMap
+
+Tools:
+- QGIS
+- Affinity Designer
+
+# Day 17: Historical
+
+{% box day17.png "Brooklyn Union Gas Company Metropolitan Works Branch, Gowanus." %}
+Data Sources:
+- [NYS Ortho Imagery](http://gis.ny.gov/gateway/mg/index.html)
+- Brooklyn Plate No. 45 Map bounded by Gowanus Bay, 11th St., 2nd Ave., Prospect Ave.
+From Atlas 64. Vol. 1, 1904. [The Lionel Pincus & Princess Firyal Map Division, The New York Public Library.](http://maps.nypl.org/warper/maps/19193)
 
 Tools:
 - QGIS
