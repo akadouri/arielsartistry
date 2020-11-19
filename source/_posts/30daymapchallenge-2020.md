@@ -539,3 +539,11 @@ Data Sources:
 Tools:
 - QGIS
 - PostgreSQL/PostGIS
+
+[Shoutout to this method of stacked porportional fills using QGIS geometry generator.](https://gis.stackexchange.com/questions/304274/filling-or-splitting-polygons-proportionally-based-on-variables-using-qgis)
+
+The expression boils down to:
+
+```
+intersection($geometry, translate(bounds($geometry), 0, (PERCENT_FILL-1)*bounds_height($geometry)))
+```
