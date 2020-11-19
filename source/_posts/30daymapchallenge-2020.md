@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day17.png
-thumbnail_alt: Brooklyn Union Gas Company Metropolitan Works Branch, Gowanus
+thumbnail: day18.png
+thumbnail_alt: A rough estimate of landuse on Manhattan Island.
 ---
 
 # Intro
@@ -499,7 +499,7 @@ Data Sources:
 
 Tools:
 - QGIS
-- PostGIS
+- PostgreSQL/PostGIS
 
 The b99 train was added after the nightly subway shutdowns to replace the 2 train. I didn't realize this until too far into placing the labels, otherwise I belive the A/C and b25 would have made more sense to pair. Wrote some wild queries to explore this stuff, though most I didn't end up using. One even included **HAVING**.
 
@@ -526,3 +526,16 @@ From Atlas 64. Vol. 1, 1904. [The Lionel Pincus & Princess Firyal Map Division, 
 Tools:
 - QGIS
 - Affinity Designer
+
+# Day 18: Landuse
+
+{% box day18.png "A rough estimate of landuse on Manhattan Island." %}
+
+Data Sources:
+- [LION Single Line Street Base Map](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-lion.page)
+- [NYC Sidewalks](https://data.cityofnewyork.us/City-Government/Sidewalk/vfx9-tbb6)
+- OpenStreetMap
+
+Tools:
+- QGIS
+- PostgreSQL/PostGIS
