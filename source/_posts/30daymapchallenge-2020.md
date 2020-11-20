@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day18.png
-thumbnail_alt: A rough estimate of landuse on Manhattan Island.
+thumbnail: day19.png
+thumbnail_alt: Restaurants without a phone number or website on OpenStreetMap
 ---
 
 # Intro
@@ -547,3 +547,15 @@ The expression boils down to:
 ```
 intersection($geometry, translate(bounds($geometry), 0, (PERCENT_FILL-1)*bounds_height($geometry)))
 ```
+
+# Day 19: NULL
+
+{% box day19.png "Restaurants without a phone number or website on OpenStreetMap." %}
+
+Data Sources:
+- OpenStreetMap
+- Mapbox (Basemap)
+
+Tools:
+- QGIS
+- PostgreSQL/PostGIS
