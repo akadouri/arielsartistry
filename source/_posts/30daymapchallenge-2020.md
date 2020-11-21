@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day19.png
-thumbnail_alt: Restaurants without a phone number or website on OpenStreetMap
+thumbnail: day20.png
+thumbnail_alt: NYC Community Board Populations
 ---
 
 # Intro
@@ -559,3 +559,17 @@ Data Sources:
 Tools:
 - QGIS
 - PostgreSQL/PostGIS
+
+
+# Day 20: Population
+
+{% box day20.png "NYC Community Board Populations." %}
+
+Data Sources:
+- [Community Districts, New York City Department of City Planning
+](https://data.cityofnewyork.us/City-Government/Community-Districts/yfnk-k7r4)
+- [Population by Community Districts, New York City Department of City Planning
+](https://data.cityofnewyork.us/City-Government/New-York-City-Population-By-Community-Districts/xi7c-iiu2)
+
+Tools:
+- QGIS
