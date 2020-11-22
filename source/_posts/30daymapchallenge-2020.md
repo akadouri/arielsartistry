@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day20.png
-thumbnail_alt: NYC Community Board Populations
+thumbnail: day21.png
+thumbnail_alt: Gowanus Canal Bridges
 ---
 
 # Intro
@@ -573,3 +573,14 @@ Data Sources:
 
 Tools:
 - QGIS
+
+# Day 21: Water
+
+{% box day21.png "Gowanus Canal Bridges." %}
+
+Data Sources:
+- Local Knowledge
+- OpenStreetMap
+
+Tools:
+- Affinity Designer
