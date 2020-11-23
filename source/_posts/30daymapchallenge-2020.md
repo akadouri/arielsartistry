@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day21.png
-thumbnail_alt: Gowanus Canal Bridges
+thumbnail: day22.png
+thumbnail_alt: The bounds of a week in my COVID bubble.
 ---
 
 # Intro
@@ -583,4 +583,16 @@ Data Sources:
 - OpenStreetMap
 
 Tools:
+- Affinity Designer
+
+
+# Day 22: Movement
+
+{% box day22.png "The bounds of a week in my COVID bubble" %}
+
+Data Sources:
+- OpenStreetMap
+
+Tools:
+- QGIS
 - Affinity Designer
