@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day22.png
-thumbnail_alt: The bounds of a week in my COVID bubble.
+thumbnail: day23.png
+thumbnail_alt: Boundary between Manhattan and Brooklyn.
 ---
 
 # Intro
@@ -496,6 +496,8 @@ Think about where you could use some bike lanes.
 Data Sources:
 - [MTA Subway Stations](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49)
 - [MTA Bus GTFS](http://web.mta.info/developers/developer-data-terms.html#data)
+- [Borough Boundaries](https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm)
+
 
 Tools:
 - QGIS
@@ -534,6 +536,7 @@ Tools:
 Data Sources:
 - [LION Single Line Street Base Map](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-lion.page)
 - [NYC Sidewalks](https://data.cityofnewyork.us/City-Government/Sidewalk/vfx9-tbb6)
+- [Borough Boundaries](https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm)
 - OpenStreetMap
 
 Tools:
@@ -588,9 +591,22 @@ Tools:
 
 # Day 22: Movement
 
-{% box day22.png "The bounds of a week in my COVID bubble" %}
+{% box day22.png "The bounds of a week in my COVID bubble." %}
 
 Data Sources:
+- OpenStreetMap
+
+Tools:
+- QGIS
+- Affinity Designer
+
+# Day 23: Boundary
+
+{% box day23.png "Boundary between Manhattan and Brooklyn." %}
+
+Data Sources:
+- [NOAA Bathymetry & Relief](https://www.ngdc.noaa.gov/nos/H10001-H12000/H11353.html)
+- [Borough Boundaries](https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm)
 - OpenStreetMap
 
 Tools:
