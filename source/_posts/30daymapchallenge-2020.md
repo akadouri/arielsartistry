@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day23.png
-thumbnail_alt: Boundary between Manhattan and Brooklyn.
+thumbnail: day24.png
+thumbnail_alt: Tallest buildings per block clipped on Brooklyn Heights.
 ---
 
 # Intro
@@ -612,3 +612,14 @@ Data Sources:
 Tools:
 - QGIS
 - Affinity Designer
+
+# Day 24: Elevation
+
+{% box day24.png "Tallest buildings per block clipped on Brooklyn Heights." %}
+
+Data Sources:
+- OpenStreetMap
+- Mapbox (Basemap)
+
+Tools:
+- QGIS
