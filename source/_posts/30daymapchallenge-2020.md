@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day24.png
-thumbnail_alt: Tallest buildings per block clipped on Brooklyn Heights.
+thumbnail: day25.png
+thumbnail_alt: Brooklyn's &quot;OpenStreets.&quot;
 ---
 
 # Intro
@@ -618,6 +618,18 @@ Tools:
 {% box day24.png "Tallest buildings per block clipped on Brooklyn Heights." %}
 
 Data Sources:
+- OpenStreetMap
+- Mapbox (Basemap)
+
+Tools:
+- QGIS
+
+# Day 25: COVID-19
+
+{% box day25.png "Brooklyn's &quot;OpenStreets.&quot;" %}
+
+Data Sources:
+- [NYC OpenStreets Dataset](https://data.cityofnewyork.us/Health/Open-Streets-Locations/uiay-nctu)
 - OpenStreetMap
 - Mapbox (Basemap)
 
