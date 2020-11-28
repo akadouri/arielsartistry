@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day25.png
-thumbnail_alt: Brooklyn's &quot;OpenStreets.&quot;
+thumbnail: day27.png
+thumbnail_alt: A small cat in a small spot.
 ---
 
 # Intro
@@ -635,3 +635,27 @@ Data Sources:
 
 Tools:
 - QGIS
+
+# Day 26: Map With a New Tool
+
+{% box day26.png "Attempt at adding 3D with Blender." %}
+
+Data Sources:
+- [NYC 1 Foot Integer DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-Integer-Raster/7kuu-zah7/)
+- OpenStreetMap
+
+Tools:
+- QGIS
+- GDAL
+- Blender
+
+
+# Day 27: Big or Small Data
+
+{% box day27.png "A small cat in a small spot." %}
+
+Data Sources:
+- Cat
+
+Tools:
+- Affinity Designer
