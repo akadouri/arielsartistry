@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day27.png
-thumbnail_alt: A small cat in a small spot.
+thumbnail: day28.png
+thumbnail_alt: Movement In a Game of Super Bomberman R Online.
 ---
 
 # Intro
@@ -659,3 +659,14 @@ Data Sources:
 
 Tools:
 - Affinity Designer
+
+# Day 28: Non-Geographic Map
+
+{% box day28.png "Movement In a Game of Super Bomberman R Online." %}
+
+Data Sources:
+- [Font: Nintender](https://www.fontspace.com/nintender-font-f22390)
+
+Tools:
+- [Keylogger](https://github.com/GiacomoLaw/Keylogger)
+- Super Bomberman R Online via Google Stadia
