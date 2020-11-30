@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day28.png
-thumbnail_alt: Movement In a Game of Super Bomberman R Online.
+thumbnail: day29.jpg
+thumbnail_alt: All the places called Long beach according to Wikipedia.
 ---
 
 # Intro
@@ -670,3 +670,15 @@ Data Sources:
 Tools:
 - [Keylogger](https://github.com/GiacomoLaw/Keylogger)
 - Super Bomberman R Online via Google Stadia
+
+# Day 29: Globe
+
+{% box day29.jpg "All the places called Long Beach according to Wikipedia." %}
+
+Data Sources:
+- [Wikipedia Long Beach disambiguation](https://en.wikipedia.org/wiki/Long_Beach_(disambiguation))
+
+Tools:
+- Post-its
+- Sony A6000
+- Lightroom/Photoshop
