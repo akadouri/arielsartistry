@@ -1,8 +1,8 @@
 ---
 title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
-thumbnail: day29.jpg
-thumbnail_alt: All the places called Long beach according to Wikipedia.
+thumbnail: day30.png
+thumbnail_alt: The genders depicted in Central Park statues.
 ---
 
 # Intro
@@ -682,3 +682,19 @@ Tools:
 - Post-its
 - Sony A6000
 - Lightroom/Photoshop
+
+# Day 30: A Map
+
+{% box day30.png "The genders depicted in Central Park statues." %}
+
+Data Sources:
+- OpenStreetMap
+- Wikidata
+
+Tools:
+- Python
+- QGIS
+
+# Conclusion
+
+Well that was a fun! 30 maps in around 30 days. I can't say I love them all, but I'm glad I put something together for each day.
