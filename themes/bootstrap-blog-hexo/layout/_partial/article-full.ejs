@@ -7,9 +7,10 @@
     </h2>
     <!-- Date and Author -->
     <p class="blog-post-meta">
-        <%= item.date.format(config.date_format) %>
-        <% if(item.author) { %>
-            by <%- item.author %>
+        Posted <%= item.date.format(config.date_format) %>
+        <br>
+        <% if(item.updated) { %>
+            Updated <%= item.updated.format(config.date_format) %>
         <% } %>
     </p>
     <!-- Content -->

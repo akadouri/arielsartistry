@@ -1,6 +1,7 @@
 ---
 title: "SlowMapChallenge 2021"
 date: 2021-11-01
+updated: 2021-11-09
 thumbnail: cover.png
 thumbnail_alt:
 ---
@@ -36,3 +37,34 @@ Another map I bought recently (for $2 at a street fair, [though Argosy has it fo
 ## Plan
 
 Over the next 10 weeks I'll try and work on a map inspired by these mid-century maps. One that features few colors, great fonts, minimal text, few points, and dotted land cover. A guide for a city with attractions, whatever those may be. I haven't picked a place to map yet, but it will probably be a neighborhood here in NYC. After that week's work session, I'll hopefully have some time to update the progress on this page.
+
+# Week 3
+
+## Data Prep
+
+One of the first things you do after deciding to make a map is figuring out if it'll actually be possible with the data you can access and amount of time you have. It would take a long time to draw each block polygon individually, and I have a loose goal of being able to replicate this style so I'd like to find an automated way of drawing them.
+
+I googled "polygons from lines" and was reminded that this function is often known as "polygonize". Time to fire up QGIS and load in the roads. I used the [QuickOSM](https://docs.3liz.org/QuickOSM/) plugin to download all the features with the key [highway](https://wiki.openstreetmap.org/wiki/Key:highway). After messing around with reprojecting, polygonize, buffering and styling I found something really close to what I wanted.
+
+## The Process
+
+- Download highways using QuickOSM
+- Filter away features with the highway values: footway, steps, elevator, service (probably many more depending on your area)
+- Reproject to a meter based coordinate system
+- Run "Polygonize"
+- Negative buffer of 5-10m
+- Throw in some drop shadow
+
+After writing out this list, I realized this would be a great time to use the QGIS model designer and save this process for next week (I'm not sold on an area to map yet).
+
+{% box model.png "The Process in QGIS Model Designer" %}
+
+## Results
+
+{% box downtown_brooklyn.png "Downtown Brooklyn" %}
+
+Removing everything else from the map brings out the clean block grouping I'm looking for. The trick in the coming weeks will be picking the right features to complement this look as well as provide the context the map needs.
+
+{% box midtown_bg.png "Midtown Manhattan" %}
+
+Bringing OSM back into the background helps think about what else we may need to pull from there.
