@@ -2,8 +2,8 @@
 title: "SlowMapChallenge 2021"
 date: 2021-11-01
 updated: 2021-11-09
-thumbnail: cover.png
-thumbnail_alt:
+thumbnail: week5.png
+thumbnail_alt: In Progress Map
 ---
 
 # Intro
@@ -68,3 +68,24 @@ Removing everything else from the map brings out the clean block grouping I'm lo
 {% box midtown_bg.png "Midtown Manhattan" %}
 
 Bringing OSM back into the background helps think about what else we may need to pull from there.
+
+# Week 4
+
+*Week 4's update has been delayed due to printer issues.*
+
+# Week 5
+
+What's left to do? A couple ideas: pick fonts, make the polygons "pop" with a shadow/glow. pick out POIs, decide on POI symbology, think about colors (or lack of), draw supporting illustrations, write supporting blurbs, come up with an appropriate title, pick hatching for water, pick different hatching for parks, stare at the hatching and hope they're different enough, etc. For this week I'll focus on the first two.
+
+## Fonts!
+
+I am not a font person. I have to Google the difference between "Sans" and "Sans Serif" every time. Then I search which you're supposed to use for maps. Sometimes I use default fonts, sometimes I pick cool fonts. I've read about fonts plenty of times but I never retain any of that knowledge. I have a handful of downloaded fonts, and I like the idea of searching for fonts for a project to complete the look. For the maps I'm looking at recreating, I think there are two fonts used. A bold font for street numbers and big labels as well as a "softer" font used for POI labels and inserts. [WhatTheFont](https://www.myfonts.com/WhatTheFont/) has a great tool for uploading images and trying to determine which font was used and I started there. After some searching, I finally found a font ([Hemispheres Bold Sans](https://www.dafont.com/hemisphers-bold-sans.font)) I felt came close for the "bold" font though it does not have the lowercase letters.
+
+I have a couple choices for the smaller font, including an option from [Mazzard](https://www.myfonts.com/pack/666653), [Simpliciter](https://www.myfonts.com/fonts/cercurius/simpliciter-sans), or even [Twentieth Century](https://en.wikipedia.org/wiki/Twentieth_Century_(typeface)). I'm not sold on any of these yet.
+
+## Shadows!
+
+The next thing I wanted to work on this week were the shadows that make the block polygons "pop" out of the page. I'm using Affinity Designer for this project (after exporting the data out of QGIS as SVG). I found this forum question on putting together [drop shadows](https://forum.affinity.serif.com/index.php?/topic/42039-creating-a-drop-shadow/). After fiddling with those settings I settled on an Outer Shadow with `radius: 1px`, `offset: 1px`, `intensity: 60%`, `angle: 225`.
+
+{% box week5.png "Hemispheres Bold for Street Labels, Outer Glow for Polygon Shadows" %}
+
