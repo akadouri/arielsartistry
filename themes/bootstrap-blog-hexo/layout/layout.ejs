@@ -3,18 +3,14 @@
 <%- partial('_partial/head') %>
 <body>
 	<%- partial('_partial/menu')%>
-	<div class="container">
-        <%- partial('_partial/header') %>
-		<div class="row">
-			<div id="sidebar" class="col-sm-4 col-md-3">
-                <%- partial('_partial/sidebar') %>
-			</div>
-			<div class="col-sm-8 col-md-9">
-				<%- body %>
-			</div>
+	<div class="layout_container">
+		<div id="sidebar">
+			<%- partial('_partial/header') %>
+			<%- partial('_partial/sidebar') %>
+		</div>
+		<div>
+			<%- body %>
 		</div>
 	</div>
-	<!-- footer -->
-	<%- partial('_partial/after-footer')%>
 </body>
 </html>
