@@ -59,7 +59,7 @@ body {
 }
 
 a {
-  color: #72badd;
+  color: #4e8ffc;
 }
 
 a:hover {
@@ -106,7 +106,6 @@ h6 {
 
 @media only screen and (max-width: 600px) {
   #sidebar {
-    width: 50%;
     margin: auto;
   }
 
@@ -130,5 +129,10 @@ h6 {
 
   .excerpt-description {
     display: none;
+  }
+
+  .blog-post {
+    width: 80vw;
+    margin: auto;
   }
 }
