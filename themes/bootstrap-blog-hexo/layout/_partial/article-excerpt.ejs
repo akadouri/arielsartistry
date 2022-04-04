@@ -1,15 +1,27 @@
 <div class="article_excerpt_container">
     <div class="excerpt-title">
-      <div>
-    	<% if (item.link) { %>
-    		<h3><a href="<%- item.link -%>"><%- item.title %></a></h3>
-    	<% } else { %>
-    		<h3><a href="<%- config.root %><%- item.path %>index.html"><%- item.title %></a></h3>
-    	<% } %>
-    	<p class="excerpt-description"><%-item.short %></p>
-       </div>
+        <div>
+            <% if (item.link) { %>
+            <h3><a href="<%- item.link -%>">
+                    <%- item.title %></a></h3>
+            <% } else { %>
+            <h3><a href="<%- config.root %><%- item.path %>index.html">
+                    <%- item.title %></a></h3>
+            <% } %>
+            <p class="excerpt-description">
+                <%-item.short %>
+            </p>
+        </div>
     </div>
     <div>
-      <img class="excerpt-img" src="<%- config.root %><%- item.path %><%- item.thumbnail %>" alt="<%- item.thumbnail_alt %>"/>
+        <% if (item.link) { %>
+        <a href="<%- item.link -%>">
+            <img class="excerpt-img" src="<%- config.root %><%- item.path %><%- item.thumbnail %>" alt="<%- item.thumbnail_alt %>" />
+        </a>
+        <% } else { %>
+        <a href="<%- config.root %><%- item.path %>index.html">
+            <img class="excerpt-img" src="<%- config.root %><%- item.path %><%- item.thumbnail %>" alt="<%- item.thumbnail_alt %>" />
+        </a>
+        <% } %>
     </div>
 </div>
