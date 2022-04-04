@@ -1,28 +1,27 @@
 /* Excerpts */
-.excerpt-row {
-  margin-top:2px;
+.article_excerpt_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 2px;
   padding: 5px;
 }
 
 .excerpt-title {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .excerpt-img {
   max-width: 300px;
 }
 
-
 /* Sidebar */
 
 #github:hover,
-#twitter:hover
-{
+#twitter:hover {
   color: #808080;
-  text-decoration:none;
-  cursor:pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #twitter {
@@ -45,24 +44,95 @@
 }
 
 .caption {
-    font-size: 14px;
-    font-style: italic;
-    display: block;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+  font-size: 0.9rem;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
+body {
+  line-height: 1.5;
+}
+
+a {
+  color: #4e8ffc;
+}
+
+a:hover {
+  color: #808080;
+}
 /*Force word-wrap to break for long URLs used in "sources"*/
-p {
-	word-wrap: break-word;
+p,
+li {
+  word-wrap: break-word;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: sans-serif;
 }
 
-@media only screen and (max-width: 575px) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+#sidebar,
+.blog-masthead {
+  margin-left: 20px;
+}
+
+/* layout.ejs */
+.layout_container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/* article-full.ejs */
+.blog-post {
+  width: 60vw;
+}
+
+/* fancybox .js */
+.img-fluid {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
   #sidebar {
-    width: 50%;
+    margin: auto;
+  }
+
+  .layout_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .article_excerpt_container {
+    display: grid;
+    grid-template-columns: initial;
+    margin-top: 2px;
+    padding: 5px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .excerpt-title {
+    justify-content: center;
+  }
+
+  .excerpt-description {
+    display: none;
+  }
+
+  .blog-post {
+    width: 80vw;
     margin: auto;
   }
 }

@@ -547,7 +547,7 @@ Tools:
 
 The expression boils down to:
 
-```
+```shell
 intersection($geometry, translate(bounds($geometry), 0, (PERCENT_FILL-1)*bounds_height($geometry)))
 ```
 
