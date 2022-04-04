@@ -58,12 +58,28 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: #72badd;
+}
+
+a:hover {
+  color: #808080;
+}
 /*Force word-wrap to break for long URLs used in "sources"*/
 p,
 li {
   word-wrap: break-word;
   line-height: 1.5;
   font-size: 1rem;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: sans-serif;
 }
 
