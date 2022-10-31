@@ -4,6 +4,7 @@ date: 2021-11-01
 updated: 2021-11-28
 thumbnail: week5.png
 thumbnail_alt: In Progress Map
+short: An hour or so a week of mapping, stopped after 5 weeks.
 ---
 
 # Intro

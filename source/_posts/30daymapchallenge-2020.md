@@ -3,6 +3,7 @@ title:  "#30DayMapChallenge 2020"
 date:   2020-11-01 00:00:00
 thumbnail: day30.png
 thumbnail_alt: The genders depicted in Central Park statues.
+short: 30 Day Map Challenge - 2020
 ---
 
 # Intro

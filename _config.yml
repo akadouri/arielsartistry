@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Ariel's Artistry
 subtitle:
 description:
 keywords:
-author: John Doe
+author: Ariel Kadouri
 language:
 timezone:
 
@@ -81,6 +81,24 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: bootstrap-blog-hexo
+
+# https://github.com/hexojs/hexo-generator-feed
+feed:
+  enable: true
+  type:
+    - atom
+  path:
+    - atom.xml
+  limit: 0
+  hub:
+  content: false
+  # content_limit:
+  # content_limit_delim: '\n'
+  order_by: -date
+  # icon: icon.png
+  autodiscovery: true
+  template: themes/bootstrap-blog-hexo/feed/atom.xml
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
