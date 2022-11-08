@@ -2,7 +2,8 @@
 <p>ariel [at] arielsartistry.com</p>
 <p>Geographer<br>Software Developer<br>Maker</p>
 <a id="twitter" href="https://twitter.com/akadouri">twitter</a><br>
-<a id="github" href="https://github.com/akadouri">github</a>
+<a id="github" href="https://github.com/akadouri">github</a><br>
+<a id="mastodon" rel="me" href="https://vis.social/@akadouri">mastodon</a>
 
 <svg id="seattle" width="150" height="240" style="display: block"></svg>
 <svg id="brooklyn" width="150" height="150" style="display: block"></svg>
@@ -11,8 +12,8 @@
 
 <script>
 	const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-	var isHome = <%- is_home() %> && (!mediaQuery || !mediaQuery.matches);
-	d3.json("<%- url_for('/js/seattle.json') %>", function(rawD) {
+	var isHome = <% - is_home() %> && (!mediaQuery || !mediaQuery.matches);
+	d3.json("<%- url_for('/js/seattle.json') %>", function (rawD) {
 		var svg = d3.select("#seattle"),
 			margin = {
 				top: 20,
@@ -24,14 +25,14 @@
 			height = +svg.attr("height") - margin.top - margin.bottom,
 			g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-		rawD.forEach(function(data) {
+		rawD.forEach(function (data) {
 			var x = d3.scaleLinear().rangeRound([0, width]);
 			var y = d3.scaleLinear().rangeRound([height, 0]);
 			var line = d3.line()
-				.x(function(d) {
+				.x(function (d) {
 					return x(d.lat);
 				})
-				.y(function(d) {
+				.y(function (d) {
 					return y(d.lon);
 				});
 
@@ -53,7 +54,7 @@
 				.attr("stroke-dasharray", totalLength + " " + totalLength)
 				.attr("stroke-dashoffset", totalLength)
 				.transition()
-				.duration(isHome ? 4000: 0)
+				.duration(isHome ? 4000 : 0)
 				.ease(d3.easeCubic)
 				.attr("stroke-dashoffset", 0);
 		});
@@ -61,7 +62,7 @@
 
 
 
-	d3.json("<%- url_for('/js/brooklyn.json') %>", function(rawD) {
+	d3.json("<%- url_for('/js/brooklyn.json') %>", function (rawD) {
 		var svg = d3.select("#brooklyn"),
 			margin = {
 				top: 20,
@@ -73,14 +74,14 @@
 			height = +svg.attr("height") - margin.top - margin.bottom,
 			g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-		rawD.forEach(function(data) {
+		rawD.forEach(function (data) {
 			var x = d3.scaleLinear().rangeRound([0, width]);
 			var y = d3.scaleLinear().rangeRound([height, 0]);
 			var line = d3.line()
-				.x(function(d) {
+				.x(function (d) {
 					return x(d.lat);
 				})
-				.y(function(d) {
+				.y(function (d) {
 					return y(d.lon);
 				});
 
@@ -102,7 +103,7 @@
 				.attr("stroke-dasharray", totalLength + " " + totalLength)
 				.attr("stroke-dashoffset", totalLength)
 				.transition()
-				.duration(isHome ? 4000: 0)
+				.duration(isHome ? 4000 : 0)
 				.ease(d3.easeCubic)
 				.attr("stroke-dashoffset", 0);
 		});

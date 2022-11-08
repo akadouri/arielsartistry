@@ -34,6 +34,11 @@
   text-decoration: none;
 }
 
+#mastodon {
+  color: #6364ff;
+  text-decoration: none;
+}
+
 /* Images */
 .img-full {
   width: auto;
@@ -65,6 +70,7 @@ a {
 a:hover {
   color: #808080;
 }
+
 /*Force word-wrap to break for long URLs used in "sources"*/
 p,
 li {
