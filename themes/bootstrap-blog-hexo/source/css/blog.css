@@ -18,7 +18,8 @@
 /* Sidebar */
 
 #github:hover,
-#twitter:hover {
+#twitter:hover,
+#mastodon:hover {
   color: #808080;
   text-decoration: none;
   cursor: pointer;

@@ -12,7 +12,7 @@
 
 <script>
 	const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-	var isHome = <% - is_home() %> && (!mediaQuery || !mediaQuery.matches);
+	var isHome = <%- is_home() %> && (!mediaQuery || !mediaQuery.matches);
 	d3.json("<%- url_for('/js/seattle.json') %>", function (rawD) {
 		var svg = d3.select("#seattle"),
 			margin = {
