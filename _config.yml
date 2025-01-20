@@ -40,16 +40,12 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: false
-#  line_number: true
-#  auto_detect: false
-#  tab_replace:
-#
-prism_plugin:
-  mode: "preprocess" # realtime/preprocess
-  theme: "vs"
-  line_number: true # default false
+  auto_detect: false
+  line_number: true
+  wrap: true
+  hljs: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -80,7 +76,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: bootstrap-blog-hexo
+theme: blog-hexo
 
 # https://github.com/hexojs/hexo-generator-feed
 feed:
@@ -97,7 +93,7 @@ feed:
   order_by: -date
   # icon: icon.png
   autodiscovery: true
-  template: themes/bootstrap-blog-hexo/feed/atom.xml
+  template: themes/blog-hexo/feed/atom.xml
 
 
 # Deployment
