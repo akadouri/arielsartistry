@@ -483,4 +483,4 @@ pg_ctl stop
 * [psycopg](http://initd.org/psycopg/)
 
 # Questions, comments?
-Feel free to email me or message me on [twitter.](https://twitter.com/akadouri)
+Feel free to email me.
