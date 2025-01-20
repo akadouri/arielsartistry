@@ -40,16 +40,22 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
-highlight:
-  enable: false
+# highlight:
+#   enable: false
 #  line_number: true
 #  auto_detect: false
 #  tab_replace:
 #
-prism_plugin:
-  mode: "preprocess" # realtime/preprocess
-  theme: "vs"
-  line_number: true # default false
+syntax_highlighter: highlight.js
+highlight:
+  auto_detect: false
+  line_number: true
+  wrap: true
+  hljs: true
+# prismjs:
+#   preprocess: true
+#   theme: "vs"
+#   line_number: true # default false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')

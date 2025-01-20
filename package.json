@@ -3,25 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "5.4.2"
+    "version": "7.3.0"
   },
   "scripts": {
     "build": "hexo generate",
     "run": "hexo serve"
   },
   "dependencies": {
-    "hexo": "^5.4.0",
-    "hexo-fs": "^3.1.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
+    "hexo": "^7.3.0",
+    "hexo-fs": "^5.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-prism-plugin": "^2.3.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^5.0.0",
-    "hexo-renderer-stylus": "^2.0.1",
-    "hexo-server": "^2.0.0",
-    "prismjs": "^1.27.0"
+    "hexo-renderer-marked": "^7.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0"
   }
 }
