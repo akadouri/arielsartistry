@@ -2,9 +2,8 @@
 title: Plotting OpenStreetMap
 date: 2026-08-18 22:00:00
 thumbnail: plot.png
-thumbnail_alt:
-short:
-tags:
+thumbnail_alt: Plotter drawing of Madison, WI's cafes
+short: What I talked about at State of the Map US 2026
 ---
 
 # Overview
