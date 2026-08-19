@@ -100,3 +100,8 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+markdown:
+  preset: 'default'
+  plugins:
+    - markdown-it-footnote

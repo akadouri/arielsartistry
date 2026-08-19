@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "7.3.0"
+    "version": "8.1.2"
   },
   "scripts": {
     "build": "hexo generate",
     "run": "hexo serve"
   },
   "dependencies": {
-    "hexo": "^7.3.0",
+    "hexo": "^8.1.0",
     "hexo-fs": "^5.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -18,7 +18,7 @@
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^7.0.0",
+    "hexo-renderer-markdown-it": "github:hexojs/hexo-renderer-markdown-it#491e82a",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0"
   }
