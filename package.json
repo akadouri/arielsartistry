@@ -1,5 +1,5 @@
 {
-  "name": "hexo-site",
+  "name": "arielsartistry",
   "version": "0.0.0",
   "private": true,
   "hexo": {
@@ -18,7 +18,9 @@
     "hexo-generator-feed": "^4.0.0",
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-tag": "^2.0.0",
-    "hexo-renderer-markdown-it": "github:hexojs/hexo-renderer-markdown-it#491e82a",
-    "hexo-server": "^3.0.0"
+    "hexo-server": "^3.0.0",
+    "hexo-util": "^4.0.0",
+    "markdown-it": "^14.3.3",
+    "markdown-it-footnote": "^3.0.3"
   }
 }
